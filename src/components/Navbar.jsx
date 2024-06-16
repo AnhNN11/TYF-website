@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Icon from "./images/Logo.svg";
+import Icon from "./images/Logo.png";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
-    <div className="font-poppins">
+    <div className="font-BROmegaVN-Regular ">
       <nav className="bg-white bg-opacity-60 backdrop-blur fixed px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 ">
         {/* dektop nav */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:px-4 pb-2 pt-2 text-black">
@@ -16,9 +16,6 @@ const Navbar = () => {
               alt="icon"
               className="hidden sm:block sm:w-[45px] sm:-h-[35px] -mt-1"
             />
-            <span className="ml-3 mt-3 sm:mt-1 font-semibold text-xl you">
-              KT-DEV
-            </span>
           </Link>
           <div className="flex">
             <ul className="sm:flex justify-center hidden">
@@ -29,7 +26,7 @@ const Navbar = () => {
                 <Link to="/about">Về chúng tôi</Link>
               </li>
               <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
-                <Link to="/services">Hoạt động</Link>
+                <Link to="/services">Sản phẩm & Giải pháp</Link>
               </li>
               <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/blogs">Bài viết</Link>
@@ -42,7 +39,7 @@ const Navbar = () => {
           <div className="flex ">
             <button
               type="button"
-              className="bg-blue-600 px-4 py-2 text-white hidden sm:block rounded-md mr-2 hover:bg-blue-500"
+              className="bg-blue-600 px-4 py-2 text-white font-BROmegaVN-Regular hidden sm:block rounded-md mr-2 hover:bg-blue-500"
             >
               Bắt đầu
             </button>
