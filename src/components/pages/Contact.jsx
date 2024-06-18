@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { motion, useInView, useAnimation } from "framer-motion";
+import backgroundImage from "../images/background.png"; // adjust the path as needed
+
 const Contact = () => {
   useEffect(() => {
     document.title = "SabMedia | Contact";
@@ -23,9 +25,28 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gradient-to-br from-blue-100">
+
+      <div className="bg-gradient-to-br from-blue-100 ">
+        <div className="object-cover lg:ml-auto lg:text-right after:bg-[url('./small.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
+          <motion.div
+            variants={{
+              visible: { opacity: 1, x: 0, filter: "blur(0px)" },
+              hidden: { opacity: 0, x: 75, filter: "blur(5px)" },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.75, delay: 0.25 }}
+            className="  inline-block pt-11 lg:pt-0 mt-6"
+          ></motion.div>
+        </div>
+        <img
+          src={backgroundImage}
+          alt="background"
+          className="absolute inset-0 w-full h-full object-fit  opacity-30 filter "
+        />
+
         <div className="max-w-screen font-poppins overflow-hidden ">
-          <section className="relative z-10 bg-gradient-to-br from-blue-100  py-20  sm:px-20 sm:py-40 ">
+          <section className="z-10 bg-gradient-to-br from-blue-100  py-20  sm:px-20 sm:py-40 ">
             <div className="container mx-auto">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
                 <motion.div
@@ -101,7 +122,7 @@ const Contact = () => {
                           <path d="M1.10265 7.85562C1.18684 9.70794 2.82868 10.4657 3.67064 10.4657H6.61752C6.65962 10.4657 6.65962 10.4657 6.65962 10.4657C7.92257 10.3815 9.18552 9.53955 9.18552 7.85562V6.84526C10.5748 6.84526 13.7742 6.84526 15.1635 6.84526V7.85562C15.1635 9.53955 16.4264 10.3815 17.6894 10.4657H17.7315H20.6363C21.4782 10.4657 23.1201 9.70794 23.2043 7.85562C23.2043 7.72932 23.2043 7.26624 23.2043 6.84526C23.2043 6.50847 23.2043 6.21378 23.2043 6.17169C23.2043 6.12959 23.2043 6.08749 23.2043 6.08749C23.078 4.90874 22.657 3.94047 21.9413 3.18271L21.8992 3.14061C20.8468 2.17235 19.5838 1.62507 18.6155 1.28828C15.795 0.193726 12.2587 0.193726 12.0903 0.193726C9.6065 0.235824 8.00677 0.446315 5.60716 1.28828C4.681 1.58297 3.41805 2.13025 2.36559 3.09851L2.3235 3.14061C1.60782 3.89838 1.18684 4.86664 1.06055 6.04539C1.06055 6.08749 1.06055 6.12959 1.06055 6.12959C1.06055 6.21378 1.06055 6.46637 1.06055 6.80316C1.10265 7.18204 1.10265 7.68722 1.10265 7.85562ZM3.37595 4.15097C4.21792 3.3932 5.27038 2.93012 6.15444 2.59333C8.34355 1.79346 9.7749 1.62507 12.1745 1.58297C12.3429 1.58297 15.6266 1.62507 18.1525 2.59333C19.0365 2.93012 20.089 3.3511 20.931 4.15097C21.394 4.65615 21.6887 5.32972 21.7729 6.12959C21.7729 6.25588 21.7729 6.46637 21.7729 6.80316C21.7729 7.22414 21.7729 7.68722 21.7729 7.81352C21.7308 8.78178 20.8047 8.99227 20.6784 8.99227H17.7736C17.3526 8.95017 16.679 8.78178 16.679 7.85562V6.12959C16.679 5.7928 16.4685 5.54021 16.1738 5.41392C15.9213 5.32972 8.55405 5.32972 8.30146 5.41392C8.00677 5.49811 7.79628 5.7928 7.79628 6.12959V7.85562C7.79628 8.78178 7.1227 8.95017 6.70172 8.99227H3.79694C3.67064 8.99227 2.74448 8.78178 2.70238 7.81352C2.70238 7.68722 2.70238 7.22414 2.70238 6.80316C2.70238 6.46637 2.70238 6.29798 2.70238 6.17169C2.61818 5.32972 2.91287 4.65615 3.37595 4.15097Z" />
                         </svg>
                       </div>
-                      <div className="w-full">
+                      <div className="w-full ">
                         <h4 className="text-dark mb-1 text-xl font-bold">
                           Số điện thoại
                         </h4>

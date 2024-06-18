@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from "react";
-import {FcGenealogy} from "react-icons/fc";
-import {FcMindMap} from "react-icons/fc";
-import {FcPositiveDynamic} from "react-icons/fc";
-import {FcComboChart} from "react-icons/fc";
-import {FcLineChart} from "react-icons/fc";
-import {FcRadarPlot} from "react-icons/fc";
-import image1 from "./images/Features/fb11.jpg";
-import image2 from "./images/Features/fb22.jpg";
-import {useAnimation, useInView, motion } from "framer-motion";
+import { FcGenealogy } from "react-icons/fc";
+import { FcMindMap } from "react-icons/fc";
+import { FcPositiveDynamic } from "react-icons/fc";
+import { FcComboChart } from "react-icons/fc";
+import { FcLineChart } from "react-icons/fc";
+import { FcRadarPlot } from "react-icons/fc";
+import image1 from "./images/image1.jpg";
+import image2 from "./images/image2.jpg";
+import image3 from "./images/image3.jpg";
+
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Features = () => {
   const { innerWidth: width, innerHeight: height } = window;
@@ -24,205 +26,136 @@ const Features = () => {
   return (
     <>
       <div className="w-[70%] h-[2px] bg-gradient-to-r from-blue-500 to-blue-200"></div>
-      <div className="max-w-screen overflow-x-hidden font-poppins ">
-        {/* features section */}
-        {width < 631 ? (
-          <>
-            <section className=" text-gray-700">
-              <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-                
-                <div className="mx-auto mb-12 text-center">
-                    <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                      Empowering Business
-                    </h2>
-                    <p className="text-lg text-gray-500">
-                        Growth Through Advanced Technology Solutions, Analytics and
-                        Professionaly Trained Personnel
-                    </p>
-                </div>
-                
-                <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                  <div>
-                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
-                      Inovation Begins Here
-                    </h3>
-                    <p className="mt-3 text-lg ">
-                      Unleash business growth with advanced technology
-                      solutions, optimizing operations, integrating innovative
-                      technologies, and receiving personalized support.
-                    </p>
-                    <div className="mt-12 space-y-12">
-                      <div className="flex">
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
-                            <FcGenealogy size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                            Advanced Algorithmic Solutions
-                          </h4>
-                          <p className="mt-2 ">
-                            Our advanced algorithms optimize your operations,
-                            boosting efficiency and profitability. Make
-                            data-driven decisions with actionable insights.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex">
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <FcMindMap size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                            Innovative Technology Integration
-                          </h4>
-                          <p className="mt-2 ">
-                            Seamlessly integrate cutting-edge technologies like
-                            AI, IoT, and cloud computing. Automate tasks,
-                            improve communication, and unlock growth potential.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex">
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <FcComboChart size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                            Trained Personnel Support
-                          </h4>
-                          <p className="mt-2 ">
-                            Our trained experts ensure smooth implementation and
-                            ongoing guidance. Leverage our software effectively
-                            with personalized assistance.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div aria-hidden="true" className="mt-10 lg:mt-0">
-                      <img
-                        src={image1}
-                        alt="image1"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
-                      />
-                    </div>
-                  </div>
-                </div>
+      <div className="max-w-screen overflow-x-hidden  ">
+        <>
+          <section className=" text-gray-700 gap-8">
+            <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+              <div className="mx-auto mb-12 text-center lg:mb-20">
+                <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+                  Empowering Digital Advancement
+                </h2>
+                <p className="text-lg text-gray-500">
+                  Drive the growth of your online presence through our advanced
+                  technology solutions, robust analytics, and a team of
+                  professionally trained experts.
+                </p>
+              </div>
+
+              <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                    <div className="lg:col-start-2">
-                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
-                        Data-Driven Decisions, Personalized Solutions
-                      </h3>
-                      <p className="mt-3 text-lg ">
-                        Data-driven decisions. Personalized solutions.
-                        Continuous innovation. Propel your business forward with
-                        our powerful analytics, tailored to your needs, and
-                        future-proofed by our commitment to innovation.
-                      </p>
-                      <div className="mt-12 space-y-12">
-                        <div className="flex">
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <FcPositiveDynamic size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 text-blue-700">
-                              Powerful Analytics Capabilities
-                            </h4>
-                            <p className="mt-2 ">
-                              Extract valuable insights from your data with
-                              comprehensive visualizations. Monitor KPIs, track
-                              trends, and identify areas for improvement.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex">
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <FcLineChart size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6  text-blue-700">
-                              Personalized Solutions
-                            </h4>
-                            <p className="mt-2 ">
-                              Tailored software solutions to address your unique
-                              needs. Achieve sustainable growth by aligning with
-                              your business objectives.
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex">
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <FcRadarPlot size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 text-blue-700">
-                              Continuous Innovation and Upgrades
-                            </h4>
-                            <p className="mt-2 ">
-                              Stay ahead with the latest features and
-                              functionalities. Adapt to market dynamics and gain
-                              a competitive edge through continuous innovation.
-                            </p>
-                          </div>
-                        </div>
+                  <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
+                    TYF - Take care of Your Future
+                  </h3>
+
+                  <div className="mt-8 space-y-8 ">
+                    <motion.div
+                      ref={ref}
+                      variants={{
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 },
+                      }}
+                      initial="hidden"
+                      animate={mainControlls}
+                      transition={{ duration: 0.5, delay: 0.15 }}
+                      className="flex"
+                    >
+                      <div className="">
+                        <p className="text-justify font-black">
+                          TYF ra đời với sứ mệnh trở thành giải pháp toàn diện
+                          cho việc gia sư và trông trẻ, nâng cao chất lượng giáo
+                          dục và chăm sóc trẻ em. Chúng tôi sẽ giúp bạn xóa tan
+                          mọi lo lắng về việc học hành và sự phát triển toàn
+                          diện của con cái bạn. Với TYF, mỗi ngày các con sẽ
+                          thấy được sự tiến bộ và phát triển, đó là cam kết mà
+                          chúng tôi mang đến cho bạn.
+                        </p>
                       </div>
-                    </div>
-                    <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-                      <img
-                        src={image2}
-                        alt="image2"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
-                      />
-                    </div>
+                    </motion.div>
+                    <motion.div
+                      ref={ref}
+                      variants={{
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 },
+                      }}
+                      initial="hidden"
+                      animate={mainControlls}
+                      transition={{ duration: 0.5, delay: 0.35 }}
+                      className="flex"
+                    >
+                      <div className="">
+                        <p className="text-justify ">
+                          Đúng như tên gọi: TYF - nghĩa là `Take care of Your
+                          Future`, chúng ta cùng xây dựng tương lai cho con trẻ.
+                          Gia sư của TYF Company sẽ luôn đồng hành cùng con,
+                          giúp con nâng cao kiến thức, kỹ năng học tập và rèn
+                          luyện tính tự học mỗi ngày. Chúng tôi không chỉ quan
+                          tâm đến việc học, mà còn chú trọng đến sự phát triển
+                          toàn diện của trẻ, bao gồm cả việc chăm sóc và hỗ trợ
+                          trong mọi khía cạnh của cuộc sống.
+                        </p>
+                      </div>
+                    </motion.div>
+                    <motion.div
+                      ref={ref}
+                      variants={{
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 },
+                      }}
+                      initial="hidden"
+                      animate={mainControlls}
+                      transition={{ duration: 0.5, delay: 0.55 }}
+                      className="flex"
+                    >
+                      <div className="">
+                        <p className="text-justify ">
+                          TYF luôn tâm niệm rằng sự thành công và phát triển
+                          toàn diện của thế hệ trẻ chính là sứ mệnh quan trọng
+                          nhất. Chúng tôi không ngừng đổi mới và sáng tạo để
+                          mang đến những dịch vụ gia sư và trông trẻ hiệu quả
+                          nhất. Với nhiều năm kinh nghiệm trong lĩnh vực tư vấn
+                          giáo dục và chăm sóc trẻ em, cùng với đội ngũ gia sư
+                          trẻ trung, nhiệt huyết, TYF tin rằng sẽ mang lại những
+                          giá trị tốt đẹp nhất cho con trẻ trên con đường học
+                          tập và phát triển.
+                        </p>
+                      </div>
+                    </motion.div>
                   </div>
+                </div>
+                <div ref={ref}>
+                  <motion.div
+                    variants={{
+                      hidden: { opacity: 0, x: 75 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControlls}
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                    aria-hidden="true"
+                    className="mt-10 lg:mt-0"
+                  >
+                    <img
+                      src={image1}
+                      alt="image1"
+                      className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                    />
+                  </motion.div>
                 </div>
               </div>
-            </section>
-          </>
-        ) : (
-          <>
-            <section className=" text-gray-700 gap-8">
-              <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-                
-                <div className="mx-auto mb-12 text-center lg:mb-20">
-                    <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                      Empowering Digital Advancement
-                    </h2>
-                    <p className="text-lg text-gray-500">
-                      Drive the growth of your online presence through our advanced 
-                      technology solutions, robust analytics, and a team of professionally trained experts. 
-                    </p>
-                </div>
-                
-                <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                  <div>
+              <div>
+                <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
+                  <div className="lg:col-start-2">
                     <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
-                      Innovation Starts Here
+                      Gia sư tại Trung tâm TYF
                     </h3>
-                    <p className="mt-3 text-lg ">
-                    Foster business growth by harnessing cutting-edge technology solutions. 
-                    We specialize in optimizing operations, integrating innovative technologies, 
-                    and delivering personalized support
-                    </p>
-                    <div className="mt-12 space-y-12 ">
+                    {/* <p className="mt-3 text-lg ">
+                     
+                    </p> */}
+                    <div className="mt-8 space-y-8">
                       <motion.div
                         ref={ref}
                         variants={{
-                          hidden: { opacity: 0, y: 75 },
+                          hidden: { opacity: 0, y: -75 },
                           visible: { opacity: 1, y: 0 },
                         }}
                         initial="hidden"
@@ -230,212 +163,90 @@ const Features = () => {
                         transition={{ duration: 0.5, delay: 0.15 }}
                         className="flex"
                       >
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                            <FcGenealogy size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                          Cutting-Edge Web Development Solutions 
-                          </h4>
-                          <p className="mt-2 ">
-                            Our cutting-edge web development solutions are designed to enhance your online presence, 
-                            and driving digital success.
-                          </p>
-                        </div>
-                      </motion.div>
-                      <motion.div
-                        ref={ref}
-                        variants={{
-                          hidden: { opacity: 0, y: 75 },
-                          visible: { opacity: 1, y: 0 },
-                        }}
-                        initial="hidden"
-                        animate={mainControlls}
-                        transition={{ duration: 0.5, delay: 0.35 }}
-                        className="flex"
-                      >
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                            <FcMindMap size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                            Innovative Technology Integration
-                          </h4>
-                          <p className="mt-2 ">
-                            Seamlessly integrate cutting-edge technologies like
-                            AI,cloud computing. Automate tasks,
-                            improve communication, and unlock growth potential.
-                          </p>
-                        </div>
-                      </motion.div>
-                      <motion.div
-                        ref={ref}
-                        variants={{
-                          hidden: { opacity: 0, y: 75 },
-                          visible: { opacity: 1, y: 0 },
-                        }}
-                        initial="hidden"
-                        animate={mainControlls}
-                        transition={{ duration: 0.5, delay: 0.55 }}
-                        className="flex"
-                      >
-                        <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                            <FcComboChart size={"4rem"}/>
-                          </div>
-                        </div>
-                        <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 text-blue-700">
-                            Experienced Web Development Support
-                          </h4>
-                          <p className="mt-2 ">
-                            Our team of seasoned web development experts is here to ensure 
-                            a seamless implementation of your digital projects. 
-                            </p>
-                        </div>
+                        <p className="text-justify">
+                          Trung tâm TYF cung cấp dịch vụ gia sư chuyên nghiệp,
+                          giúp học sinh cải thiện kiến thức và kỹ năng học tập.
+                          Đội ngũ gia sư tại TYF được tuyển chọn kỹ lưỡng, có
+                          trình độ chuyên môn cao và giàu kinh nghiệm. Họ luôn
+                          tận tâm và linh hoạt trong phương pháp giảng dạy, nhằm
+                          đáp ứng nhu cầu học tập đa dạng của từng học sinh.
+                        </p>
                       </motion.div>
                     </div>
                   </div>
-                  <div ref={ref}>
-                    <motion.div
-                      variants={{
-                        hidden: { opacity: 0, x: 75 },
-                        visible: { opacity: 1, x: 0 },
-                      }}
-                      initial="hidden"
-                      animate={mainControlls}
-                      transition={{ duration: 0.5, delay: 0.25 }}
-                      aria-hidden="true"
-                      className="mt-10 lg:mt-0"
-                    >
-                      <img
-                        src={image1}
-                        alt="image1"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
-                      />
-                    </motion.div>
-                  </div>
+                  <motion.div
+                    ref={ref}
+                    variants={{
+                      hidden: { opacity: 0, x: -75 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControlls}
+                    transition={{ duration: 0.5, delay: 0.15 }}
+                    className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
+                  >
+                    <img
+                      src={image2}
+                      alt="image2"
+                      className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                    />
+                  </motion.div>
                 </div>
+              </div>
+              <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                    <div className="lg:col-start-2">
-                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
-                        Data-Driven Strategy, Tailored Excellence
-                      </h3>
-                      <p className="mt-3 text-lg ">
-                        A data-driven strategy. Tailored excellence. 
-                        Continuous innovation. Propel your web presence 
-                        forward with our powerful analytics solutions, 
-                        customized to your unique need
-                      </p>
-                      <div className="mt-12 space-y-12">
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.15 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                              <FcPositiveDynamic size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 text-blue-700">
-                              Robust Analytical Capabilities
-                            </h4>
-                            <p className="mt-2 ">
-                            Unlock valuable insights within your web projects using our 
-                            powerful analytics tools. With comprehensive visualizations
-                            </p>
-                          </div>
-                        </motion.div>
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.35 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                              <FcLineChart size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 text-blue-700">
-                              Customized Web Solutions
-                            </h4>
-                            <p className="mt-2 ">
-                            We specialize in crafting bespoke web solutions that precisely 
-                            address your distinct requirements. By aligning with your business objectives.
-                            </p>
-                          </div>
-                        </motion.div>
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.55 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-16 h-12 rounded-md  dark:text-gray-900">
-                              <FcRadarPlot size={"4rem"}/>
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 text-blue-700">
-                              Ongoing Innovation and Enhancements
-                            </h4>
-                            <p className="mt-2 ">
-                              Maintain your competitive edge by keeping your web 
-                              solutions up to date with the latest features and functionalities.
-                            </p>
-                          </div>
-                        </motion.div>
-                      </div>
-                    </div>
+                  <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
+                    Trông trẻ
+                  </h3>
+
+                  <div className="mt-8 space-y-8 ">
                     <motion.div
                       ref={ref}
                       variants={{
-                        hidden: { opacity: 0, x: -75 },
-                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 },
                       }}
                       initial="hidden"
                       animate={mainControlls}
                       transition={{ duration: 0.5, delay: 0.15 }}
-                      className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
+                      className="flex"
                     >
-                      <img
-                        src={image2}
-                        alt="image2"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
-                      />
+                      <div className="">
+                        <p className="text-justify">
+                          Trung tâm TYF cung cấp dịch vụ trông trẻ an toàn và
+                          tận tâm. Đội ngũ nhân viên trông trẻ tại TYF được đào
+                          tạo chuyên nghiệp, yêu trẻ và có kỹ năng chăm sóc tốt.
+                          Họ đảm bảo môi trường vui chơi và học tập lành mạnh
+                          cho trẻ, giúp phụ huynh hoàn toàn yên tâm khi giao con
+                          cho trung tâm.
+                        </p>
+                      </div>
                     </motion.div>
                   </div>
                 </div>
+                <div ref={ref}>
+                  <motion.div
+                    variants={{
+                      hidden: { opacity: 0, x: 75 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControlls}
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                    aria-hidden="true"
+                    className="mt-10 lg:mt-0"
+                  >
+                    <img
+                      src={image3}
+                      alt="image3"
+                      className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                    />
+                  </motion.div>
+                </div>
               </div>
-            </section>
-          </>
-        )}
+            </div>
+          </section>
+        </>
 
         {/* end */}
       </div>

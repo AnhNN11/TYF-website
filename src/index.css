@@ -9,23 +9,23 @@
 }
 @font-face {
   font-family: "BROmegaVN-BlackItalic";
-  src: url("../public/assets/fonts/BROmegaVN-BlackItalic.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
 @font-face {
   font-family: "BROmegaVN-Bold";
-  src: url("../public/assets/fonts/BROmegaVN-Bold.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
 @font-face {
   font-family: "BROmegaVN-BoldItalic";
-  src: url("../public/assets/fonts/BROmegaVN-BoldItalic.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
 @font-face {
   font-family: "BROmegaVN-Light";
-  src: url("../public/assets/fonts/BROmegaVN-Light.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
 @font-face {
   font-family: "BROmegaVN-LightItalic";
-  src: url("../public/assets/fonts/BROmegaVN-LightItalic.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
 @font-face {
   font-family: "BROmegaVN-Regular";
@@ -33,5 +33,5 @@
 }
 @font-face {
   font-family: "BROmegaVN-RegularItalic";
-  src: url("../public/assets/fonts/BROmegaVN-RegularItalic.otf");
+  src: url("../public/assets/fonts/BROmegaVN-Black.otf");
 }
