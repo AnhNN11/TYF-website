@@ -13,7 +13,7 @@ import Footer from "../Footer";
 import { useAnimation, useInView, motion } from "framer-motion";
 const Services = () => {
   useEffect(() => {
-    document.title = "SabMedia | Services";
+    document.title = "TYF | Sản phẩm";
   }, []);
 
   const { innerWidth: width, innerHeight: height } = window;

@@ -6,7 +6,7 @@ import backgroundImage from "../images/background.png"; // adjust the path as ne
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "SabMedia | Contact";
+    document.title = "TYF | Kết nối";
   }, []);
   const { innerWidth: Width } = window;
   const ref = useRef();

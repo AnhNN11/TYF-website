@@ -42,7 +42,7 @@ const Blogs = () => {
   const blogsPerPage = 3; // Number of blogs to display per page
 
   useEffect(() => {
-    document.title = "SabMedia | Blogs";
+    document.title = "TYF | Tuyển dụng";
     window.scrollTo(0, 0);
   }, []);
 

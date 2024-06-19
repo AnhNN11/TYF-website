@@ -134,7 +134,7 @@ const About = () => {
     }
   }, [isInView]);
   useEffect(() => {
-    document.title = "SabMedia | About";
+    document.title = "TYF | Về chúng tôi";
   }, []);
   /* automatically scroll to the top of the page */
   useEffect(() => {

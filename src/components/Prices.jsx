@@ -46,7 +46,7 @@ const Prices = () => {
               <Card
                 image={
                   <PiChalkboardTeacher
-                    style={{ fontSize: "5rem", color: "#00ADEE"  }}
+                    style={{ fontSize: "5rem", color: "#00ADEE" }}
                   />
                 }
                 Package={"Gia sư"}
@@ -124,11 +124,11 @@ const Card = ({
       className={`w-full shadow-xl flex flex-col p-4 my-4 bg-white ${standOutBg} ${marginMiddle} rounded-lg hover:scale-105 duration-300`}
     >
       <div className="w-20 mx-auto mt-0">{image}</div>
-      <h2 className="text-2xl font-bold text-center">{Package}</h2>
+      <h2 className="text-2xl font-bromega-regular text-center">{Package}</h2>
       <p className="py-2 mx-8 mb-6 -mt-2 flex justify-center text-3xl font-bold">
         {Price}
       </p>
-      <div className="text-center font-medium">
+      <div className="text-center font-bromega-light">
         <p className="py-2 border-b mx-8 flex justify-between">
           {Feature1}
           <BsFillCheckCircleFill className={`ml-2 my-auto ${iconColor1}`} />
@@ -147,7 +147,7 @@ const Card = ({
         </p>
       </div>
       <button
-        className={`justify-center flex mx-auto w-[200px] ${buttonBg} ${hoverBgButton} ${buttonTextColor} rounded-md font-medium my-6 py-3`}
+        className={`justify-center flex mx-auto w-[200px] ${buttonBg} ${hoverBgButton} ${buttonTextColor} rounded-md font-bromega-regular my-6 py-3`}
       >
         Contact Suport
       </button>
