@@ -1,4 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import { FcGenealogy } from "react-icons/fc";
+import { FcMindMap } from "react-icons/fc";
+import { FcPositiveDynamic } from "react-icons/fc";
+import { FcComboChart } from "react-icons/fc";
+import { FcLineChart } from "react-icons/fc";
+import { FcRadarPlot } from "react-icons/fc";
 import image1 from "./images/image1.jpg";
 import image2 from "./images/image2.jpg";
 import image3 from "./images/image3.jpg";
@@ -11,12 +17,12 @@ const Features = () => {
   const isInView = useInView(ref);
 
   const mainControlls = useAnimation();
-
   useEffect(() => {
     if (isInView) {
       mainControlls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControlls]);
+
   return (
     <>
       <div className="w-[70%] h-[2px] bg-gradient-to-r from-blue-500 to-blue-200"></div>
@@ -25,8 +31,8 @@ const Features = () => {
           <section className=" text-gray-700 gap-8">
             <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
               <div className="mx-auto mb-12 text-center lg:mb-20">
-                <h2 className="mb-4 text-3xl font-bromega-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                  Đôi nét về TYF
+                <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+                  Empowering Digital Advancement
                 </h2>
                 <p className="text-lg text-gray-500">
                   Drive the growth of your online presence through our advanced
@@ -37,7 +43,7 @@ const Features = () => {
 
               <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <h3 className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-blue-500">
+                  <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
                     TYF - Take care of Your Future
                   </h3>
 
@@ -54,7 +60,7 @@ const Features = () => {
                       className="flex"
                     >
                       <div className="">
-                        <p className="text-justify font-bromega-light">
+                        <p className="text-justify font-black">
                           TYF ra đời với sứ mệnh trở thành giải pháp toàn diện
                           cho việc gia sư và trông trẻ, nâng cao chất lượng giáo
                           dục và chăm sóc trẻ em. Chúng tôi sẽ giúp bạn xóa tan
@@ -66,7 +72,6 @@ const Features = () => {
                       </div>
                     </motion.div>
                     <motion.div
-                      ref={ref}
                       variants={{
                         hidden: { opacity: 0, y: 75 },
                         visible: { opacity: 1, y: 0 },
@@ -77,7 +82,7 @@ const Features = () => {
                       className="flex"
                     >
                       <div className="">
-                        <p className="text-justify font-bromega-light">
+                        <p className="text-justify ">
                           Đúng như tên gọi: TYF - nghĩa là `Take care of Your
                           Future`, chúng ta cùng xây dựng tương lai cho con trẻ.
                           Gia sư của TYF Company sẽ luôn đồng hành cùng con,
@@ -90,7 +95,6 @@ const Features = () => {
                       </div>
                     </motion.div>
                     <motion.div
-                      ref={ref}
                       variants={{
                         hidden: { opacity: 0, y: 75 },
                         visible: { opacity: 1, y: 0 },
@@ -101,7 +105,7 @@ const Features = () => {
                       className="flex"
                     >
                       <div className="">
-                        <p className="text-justify font-bromega-light">
+                        <p className="text-justify ">
                           TYF luôn tâm niệm rằng sự thành công và phát triển
                           toàn diện của thế hệ trẻ chính là sứ mệnh quan trọng
                           nhất. Chúng tôi không ngừng đổi mới và sáng tạo để
@@ -116,7 +120,7 @@ const Features = () => {
                     </motion.div>
                   </div>
                 </div>
-                <div ref={ref}>
+                <div>
                   <motion.div
                     variants={{
                       hidden: { opacity: 0, x: 75 },
@@ -139,15 +143,15 @@ const Features = () => {
               <div>
                 <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
                   <div className="lg:col-start-2">
-                    <h3 className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-blue-500">
-                      Gia sư
+                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
+                      Gia sư tại Trung tâm TYF
                     </h3>
                     {/* <p className="mt-3 text-lg ">
                      
                     </p> */}
                     <div className="mt-8 space-y-8">
                       <motion.div
-                        ref={ref}
+                        //   ref2={ref}
                         variants={{
                           hidden: { opacity: 0, y: -75 },
                           visible: { opacity: 1, y: 0 },
@@ -157,7 +161,7 @@ const Features = () => {
                         transition={{ duration: 0.5, delay: 0.15 }}
                         className="flex"
                       >
-                        <p className="text-justify font-bromega-light">
+                        <p className="text-justify">
                           Trung tâm TYF cung cấp dịch vụ gia sư chuyên nghiệp,
                           giúp học sinh cải thiện kiến thức và kỹ năng học tập.
                           Đội ngũ gia sư tại TYF được tuyển chọn kỹ lưỡng, có
@@ -169,7 +173,6 @@ const Features = () => {
                     </div>
                   </div>
                   <motion.div
-                    ref={ref}
                     variants={{
                       hidden: { opacity: 0, x: -75 },
                       visible: { opacity: 1, x: 0 },
@@ -189,13 +192,13 @@ const Features = () => {
               </div>
               <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <h3 className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-blue-500">
+                  <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500">
                     Trông trẻ
                   </h3>
 
                   <div className="mt-8 space-y-8 ">
                     <motion.div
-                      ref={ref}
+                      //  ref3={ref}
                       variants={{
                         hidden: { opacity: 0, y: 75 },
                         visible: { opacity: 1, y: 0 },
@@ -206,7 +209,7 @@ const Features = () => {
                       className="flex"
                     >
                       <div className="">
-                        <p className="text-justify font-bromega-light">
+                        <p className="text-justify">
                           Trung tâm TYF cung cấp dịch vụ trông trẻ an toàn và
                           tận tâm. Đội ngũ nhân viên trông trẻ tại TYF được đào
                           tạo chuyên nghiệp, yêu trẻ và có kỹ năng chăm sóc tốt.
@@ -218,7 +221,7 @@ const Features = () => {
                     </motion.div>
                   </div>
                 </div>
-                <div ref={ref}>
+                <div>
                   <motion.div
                     variants={{
                       hidden: { opacity: 0, x: 75 },
