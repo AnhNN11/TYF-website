@@ -18,8 +18,8 @@ const Footer = () => {
                   <div className="single-cta">
                     <i className="fas fa-map-marker-alt" />
                     <div className="cta-text">
-                      <h4>Find us</h4>
-                      <span>
+                      <h4 className="font-bromega-regular"> Find us</h4>
+                      <span className="font-bromega-light">
                         Tầng 1 Tòa nhà 06 Trần Phú, Q. Hải Châu, TP. Đà Nẵng
                       </span>
                     </div>
@@ -29,8 +29,8 @@ const Footer = () => {
                   <div className="single-cta">
                     <i className="fas fa-phone" />
                     <div className="cta-text">
-                      <h4>Call us</h4>
-                      <span>0964106456</span>
+                      <h4 className="font-bromega-regular">Call us</h4>
+                      <span className="font-bromega-light">0964106456</span>
                     </div>
                   </div>
                 </div>
@@ -38,8 +38,10 @@ const Footer = () => {
                   <div className="single-cta">
                     <i className="far fa-envelope-open" />
                     <div className="cta-text">
-                      <h4>Mail us</h4>
-                      <span>nguyenanh.mindxdn@gmail.com</span>
+                      <h4 className="font-bromega-regular">Mail us</h4>
+                      <span className="font-bromega-light">
+                        nguyenanh.mindxdn@gmail.com
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -60,7 +62,7 @@ const Footer = () => {
                       </a>
                     </div>
                     <div className="footer-text">
-                      <p>
+                      <p className="font-bromega-light">
                         Lorem ipsum dolor sit amet, consec tetur adipisicing
                         elit, sed do eiusmod tempor incididuntut consec tetur
                         adipisicing elit,Lorem ipsum dolor sit amet.
@@ -71,10 +73,10 @@ const Footer = () => {
                 <div className="col-span-3" style={{ gap: 60 }}>
                   <div className="footer-widget">
                     <div className="footer-widget-heading">
-                      <h3>Subscribe</h3>
+                      <h3 className="font-bromega-regular">Subscribe</h3>
                     </div>
                     <div className="footer-text mb-25">
-                      <p>
+                      <p className="font-bromega-light">
                         Don’t miss to subscribe to our new feeds, kindly fill
                         the form below.
                       </p>

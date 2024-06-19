@@ -6,8 +6,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   console.log(open);
   return (
-    <div className="font-BROmegaVN-Regular ">
-      <nav className="bg-white bg-opacity-60 backdrop-blur fixed px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 ">
+    <div className="font-bromega-regular ">
+      <nav className="   px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 ">
         {/* dektop nav */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:px-4 pb-2 pt-2 text-black">
           <Link to="/" className="flex items-start">
@@ -18,20 +18,20 @@ const Navbar = () => {
             />
           </Link>
           <div className="flex">
-            <ul className="sm:flex justify-center hidden">
-              <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
+            <ul className="sm:flex justify-center hidden border-b border-gray-300">
+              <li className="p-2 mr-2 hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/">Trang chủ</Link>
               </li>
-              <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
+              <li className="p-2 mr-2 hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/about">Về chúng tôi</Link>
               </li>
-              <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
+              <li className="p-2 mr-2 hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/services">Sản phẩm & Giải pháp</Link>
               </li>
-              <li className="p-2 mr-2  hover:text-blue-800 font-bold cursor-pointer">
+              <li className="p-2 mr-2 hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/blogs">Bài viết</Link>
               </li>
-              <li className="p-2  hover:text-blue-800 font-bold cursor-pointer">
+              <li className="p-2 hover:text-blue-800 font-bold cursor-pointer">
                 <Link to="/contact">Kết nối</Link>
               </li>
             </ul>

@@ -28,7 +28,7 @@ const Review = () => {
             className="max-w-2xl mx-auto rounded shadow-md bg-white p-6 my-8  space-y-4 text-center xl:col-span-2 xl:text-left"
           >
             <h2 className="text-4xl font-bold text-blue-500">
-              Tại sao các bạn nên tham gia các hoạt động của chúng tôi
+              Câu hỏi thường gặp
             </h2>
             <p className="text-gray-500">
               Đây là một số nhận xét của một số thành viên trong CLB

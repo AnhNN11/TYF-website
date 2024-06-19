@@ -30,10 +30,10 @@ const CallToAction = () => {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="w-full px-4 lg:w-1/2"
               >
-                <h2 className=" text-3xl font-bold leading-tight text-white sm:text-[38px] ">
+                <h2 className=" text-3xl font-bromega-bold leading-tight text-white sm:text-[38px] ">
                   Ươm mầm tương lai của con bạn !{" "}
                 </h2>
-                <p className="text-white text-lg text-justify">
+                <p className="text-white text-lg text-justify font-bromega-light">
                   Xin chào và cảm ơn bạn đã dành thời gian khám phá về công ty
                   TYF của chúng tôi. Đây là công ty với dịch vụ trông trẻ và gia
                   sư, chúng tôi tự tin có thể nếu bạn an tâm và hài lòng về dịch
@@ -41,9 +41,9 @@ const CallToAction = () => {
                 </p>
                 <button
                   href="#"
-                  className="mt-10 hover:bg-blue-500 my-1 mr-4 inline-block rounded bg-white bg-opacity-[30%] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-100 md:px-9 lg:px-6 xl:px-9"
+                  className="mt-10 hover:bg-blue-500 my-1 mr-4 inline-block rounded bg-white bg-opacity-[30%] py-4 px-6 text-base font-bromega-light text-white transition hover:bg-opacity-100 md:px-9 lg:px-6 xl:px-9"
                 >
-                  Talk to a Agent
+                  Đăng ký ngay
                 </button>
               </motion.div>
               <div className="w-full px-4 lg:w-1/2">

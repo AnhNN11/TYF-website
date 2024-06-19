@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import heroImage from "./images/heroImage.png";
 import ayroui from "./images/brands/ayroui.svg";
 import graygrids from "./images/brands/graygrids.svg";
-import uideck from "./images/brands/uideck.svg";
+import uideck from "./images/brands/Logo.png";
 import backgroundImage from "./images/background.png"; // adjust the path as needed
 
 const Hero = () => {
@@ -32,12 +32,12 @@ const Hero = () => {
                 >
                   <h1
                     className="sm:text-9xl text-5xl from-blue-500 to-emerald-600 mb-3 xl:mt-20
-                    leading-snug sm:text-[52px] lg:text-[50px] xl:text-[52px] font-BROmegaVN-Light"
+                    leading-snug sm:text-[52px] lg:text-[50px] xl:text-[52px] font-bromega-regular"
                   >
                     Chào mừng đến <br />
                   </h1>
                   <div className="font-BROmegaVN-Regular">
-                    <span className="sm:text-8xl text-7xl xl:my-50 font-BROmegaVN-Regular">
+                    <span className="sm:text-8xl text-7xl xl:my-50 font-bromega-regular-italic">
                       <span className="text-blue-500 cursor-pointer my-40">
                         TYF Company
                       </span>{" "}
@@ -45,7 +45,7 @@ const Hero = () => {
                     </span>
                   </div>
 
-                  <p className="text-gray-600 text-lg my-9 max-w-[480px] text-justify">
+                  <p className="text-gray-600 text-lg my-9 max-w-[480px] text-justify font-bromega-light">
                     Xin chào và cảm ơn bạn đã dành thời gian khám phá về công ty
                     TYF của chúng tôi. Đây là công ty với dịch vụ trông trẻ và
                     gia sư, chúng tôi tự tin có thể nếu bạn an tâm và hài lòng
@@ -61,7 +61,7 @@ const Hero = () => {
                   animate="visible"
                   transition={{ duration: 0.75, delay: 0.25 }}
                 >
-                  <ul className="flex flex-wrap items-center">
+                  <ul className="flex flex-wrap items-center  font-bromega-light">
                     <li>
                       <Link
                         to="#"
@@ -91,21 +91,21 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   transition={{ duration: 0.75, delay: 0.25 }}
-                  className="clients pt-16"
+                  className="clients pt-16 font-bromega-light"
                 >
                   <h6 className="text-body-color mb-2 flex items-center text-xs text-gray-500">
                     Some Of Our Clients
                     <span className="bg-body-color ml-2 inline-block h-[1px] w-8"></span>
                   </h6>
                   <div className="flex items-center">
-                    <div className="mr-4 w-full py-3">
+                    {/* <div className="mr-4 w-full py-3">
                       <img src={ayroui} alt="ayroui" />
                     </div>
                     <div className="mr-4 w-full py-3">
                       <img src={graygrids} alt="graygrids" />
-                    </div>
-                    <div className="mr-4 w-full py-3">
-                      <img src={uideck} alt="uideck" />
+                    </div> */}
+                    <div className="mr-4 w-full  py-3">
+                      <img src={uideck} alt="uideck" className="" />
                     </div>
                   </div>
                 </motion.div>

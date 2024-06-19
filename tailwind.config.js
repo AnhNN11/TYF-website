@@ -4,16 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        fontFamily: {
-          black: ["BROmegaVN-Black", "sans-serif"],
-          blackItalic: ["BROmegaVN-BlackItalic", "sans-serif"],
-          bold1: ["BROmegaVN-Bold", "sans-serif"],
-          bold1Italic: ["BROmegaVN-BoldItalic", "sans-serif"],
-          light1: ["BROmegaVN-Light", "sans-serif"],
-          light1Italic: ["BROmegaVN-LightItalic", "sans-serif"],
-          regular1: ["BROmegaVN-Regular", "sans-serif"],
-          regular1Italics: ["BROmegaVN-RegularItalic", "sans-serif"],
-        },
+        "bromega-black": ["BROmegaVN-Black", "sans-serif"],
+        "bromega-black-italic": ["BROmegaVN-BlackItalic", "sans-serif"],
+        "bromega-bold": ["BROmegaVN-Bold", "sans-serif"],
+        "bromega-bold-italic": ["BROmegaVN-BoldItalic", "sans-serif"],
+        "bromega-light": ["BROmegaVN-Light", "sans-serif"],
+        "bromega-light-italic": ["BROmegaVN-LightItalic", "sans-serif"],
+        "bromega-regular": ["BROmegaVN-Regular", "sans-serif"],
+        "bromega-regular-italic": ["BROmegaVN-RegularItalic", "sans-serif"],
       },
     },
   },

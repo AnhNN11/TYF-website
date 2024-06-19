@@ -12,7 +12,7 @@ const Contact = () => {
   const ref = useRef();
   const isInView = useInView(ref);
   const mainControlls = useAnimation(isInView);
-
+ 
   useEffect(() => {
     if (isInView) {
       mainControlls.start("visible");
@@ -27,7 +27,7 @@ const Contact = () => {
       <Navbar />
 
       <div className="bg-gradient-to-br from-blue-100 ">
-        <div className="object-cover lg:ml-auto lg:text-right after:bg-[url('./small.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
+        <div className="object-cover lg:ml-auto lg:text-right after:bg-[url('./small.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px]  before:absolute before:bottom-0 before:-right-10">
           <motion.div
             variants={{
               visible: { opacity: 1, x: 0, filter: "blur(0px)" },
