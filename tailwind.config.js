@@ -13,6 +13,15 @@ export default {
         "bromega-regular": ["BROmegaVN-Regular", "sans-serif"],
         "bromega-regular-italic": ["BROmegaVN-RegularItalic", "sans-serif"],
       },
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
 

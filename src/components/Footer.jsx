@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "./images/Logo.png";
-
+import ScrollToTop from "react-scroll-up";
 import "./styles/footer.css";
 const Footer = () => {
   return (
@@ -106,6 +106,11 @@ const Footer = () => {
             </div>
           </div>
         </footer>
+        <ScrollToTop showUnder={160}>
+          <div className="bg-blue-500 w-10 h-10 text-white rounded-full flex items-center justify-center">
+            <span>Top</span>
+          </div>
+        </ScrollToTop>
       </div>
     </>
   );

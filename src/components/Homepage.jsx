@@ -6,6 +6,7 @@ import Prices from "./Prices";
 import CallToAction from "./CallToAction";
 import Review from "./Review";
 import Footer from "./Footer";
+import InfiniteScroll from "./InfiniteScroll";
 function Homepage() {
   useEffect(() => {
     document.title = "TYF | Home";
@@ -19,6 +20,7 @@ function Homepage() {
       <Navbar />
       <Hero />
 
+      <InfiniteScroll />
       <div className="bg-gradient-to-tr from-blue-100">
         <Features />
         <Prices />
