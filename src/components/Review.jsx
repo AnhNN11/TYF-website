@@ -49,15 +49,7 @@ const Review = () => {
                   className="p-6 rounded-lg shadow-lg bg-white mt-6"
                 >
                   <p>
-                    I recently used the services of this agency, and I am
-                    thrilled with the results. The team went above and beyond to
-                    ensure that my needs were met. From the initial consultation
-                    to the final delivery, their professionalism and attention
-                    to detail were evident. They were prompt in responding to my
-                    queries and kept me informed throughout the process. The end
-                    product exceeded my expectations, and I highly recommend
-                    their services to anyone looking for top-notch quality and
-                    exceptional customer care.
+                  Tôi đã sừ dụng dịch vụ của công ty và cực kì hài lòng với nó. Từ lúc được học tập với gia sư bên mình, kết quả học tập của con tôi đã cải thiện một cách nhanh chóng và rõ rệt. Đồng thời, chất lượng và chuyên môn của gia sư cũng rất tuyệt vời, ngoài sức mong đợi của tôi. Tôi khuyến khích mọi người nên sử dụng dịch vụ của công ty, rất xứng đáng !
                   </p>
                   <div className="flex justify-between items-center mt-4 space-x-4">
                     <div className="flex">
@@ -92,11 +84,7 @@ const Review = () => {
                   className="p-6 rounded-lg shadow-lg bg-white "
                 >
                   <p>
-                    I cannot say enough good things about this agency. The level
-                    of workmanship they displayed was truly impressive. They
-                    understood my vision perfectly and executed it flawlessly.
-                    Not only that, but their customer service was outstanding.
-                    They were patient, attentive.
+                  Một điểm mạnh khác của TYF Childcare Center là chương trình học sáng tạo và phù hợp. Tôi rất hài lòng với cách mà các hoạt động giáo dục được thiết kế để khuyến khích sự sáng tạo, tư duy logic và phát triển toàn diện của trẻ em. Các em được tham gia vào các hoạt động thể chất, nghệ thuật, và trò chơi học thuật một cách tự nhiên và vui vẻ. Tôi thấy rằng các em không chỉ học hỏi mà còn phát triển kỹ năng xã hội và tạo ra những mối quan hệ tốt với bạn bè.
                   </p>
                   <div className="flex items-center justify-between mt-4 space-x-4">
                     <div className="flex">
@@ -135,12 +123,8 @@ const Review = () => {
                   className="p-6 rounded-lg shadow-lg bg-white"
                 >
                   <p>
-                    I have had the pleasure of working with this agency, and I
-                    can confidently say that they are a reliable and trustworthy
-                    partner. From the moment I engaged their services, they
-                    demonstrated a high level of professionalism and expertise.
-                    They listened to my requirements attentively and provided
-                    valuable insights and suggestions.
+                  Điều tôi thích nhất ở TYF Childcare Center là sự giao tiếp và tương tác thường xuyên với phụ huynh. Tôi luôn được thông báo về tiến trình và hoạt động của con em thông qua hội thảo, cuộc họp, và báo cáo cá nhân. Điều này giúp tôi cảm thấy liên kết và tham gia vào quá trình phát triển của con em một cách chặt chẽ. Tôi cũng có cơ hội chia sẻ ý kiến và quan ngại của mình và nhận được sự hỗ trợ và giải đáp từ nhân viên tận tâm của TYF Childcare Center.
+
                   </p>
                   <div className="flex justify-between items-center mt-2 space-x-4">
                     <div className="flex">
@@ -176,13 +160,7 @@ const Review = () => {
                   className="p-6 rounded-lg shadow-lg bg-white"
                 >
                   <p>
-                    I recently engaged this agency for their services, and I am
-                    extremely pleased with the outcome. Their attention to
-                    detail is second to none. They meticulously handled every
-                    aspect of the project, ensuring that nothing was overlooked.
-                    The level of care and precision they put into their work is
-                    truly remarkable. The team was professional, responsive, and
-                    dedicated to delivering a top-notch experience.
+                  Tôi rất hài lòng với dịch vụ giữ trẻ tại TYF Childcare Center. Đây là một nơi tuyệt vời cho con em phát triển và sáng tạo trong một môi trường an toàn và chăm sóc. Tôi sẽ tiếp tục ủng hộ và khuyến khích mọi người sử dụng dịch vụ tại TYF Childcare Center.
                   </p>
                   <div className="flex justify-between items-center mt-4 space-x-4">
                     <div className="flex">

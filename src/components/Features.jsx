@@ -32,12 +32,10 @@ const Features = () => {
             <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
               <div className="mx-auto mb-12 text-center lg:mb-20">
                 <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                  Empowering Digital Advancement
+                Tiến Bộ Số Hóa
                 </h2>
                 <p className="text-lg text-gray-500">
-                  Drive the growth of your online presence through our advanced
-                  technology solutions, robust analytics, and a team of
-                  professionally trained experts.
+                Thúc đẩy sự phát triển của sự hiện diện trực tuyến của bạn thông qua các giải pháp công nghệ tiên tiến, phân tích mạnh mẽ và đội ngũ chuyên gia được đào tạo chuyên nghiệp.
                 </p>
               </div>
 
