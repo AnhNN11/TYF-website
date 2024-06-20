@@ -38,6 +38,7 @@ const Features = () => {
   return (
     <>
       <div className="w-[70%] h-[2px] bg-gradient-to-r from-blue-500 to-blue-200"></div>
+<<<<<<< HEAD
       <div className="max-w-screen overflow-x-hidden">
         <section className="text-gray-700 gap-8">
           <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
@@ -51,6 +52,20 @@ const Features = () => {
                 ngũ chuyên gia được đào tạo chuyên nghiệp.
               </p>
             </div>
+=======
+      <div className="max-w-screen overflow-x-hidden  ">
+        <>
+          <section className=" text-gray-700 gap-8">
+            <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+              <div className="mx-auto mb-12 text-center lg:mb-20">
+                <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+                Tiến Bộ Số Hóa
+                </h2>
+                <p className="text-lg text-gray-500">
+                Thúc đẩy sự phát triển của sự hiện diện trực tuyến của bạn thông qua các giải pháp công nghệ tiên tiến, phân tích mạnh mẽ và đội ngũ chuyên gia được đào tạo chuyên nghiệp.
+                </p>
+              </div>
+>>>>>>> 38511eac7748b1056d9a3ccf5df44522a47b94d3
 
             <div className="grid lg:gap-20 lg:grid-cols-2 lg:items-center">
               <div>
