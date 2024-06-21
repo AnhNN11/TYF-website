@@ -42,10 +42,10 @@ const Features = () => {
         <section className="text-gray-700 gap-8">
           <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
             <div className="mx-auto mb-12 text-center lg:mb-20">
-              <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+              <h2 className="mb-4 text-3xl font-bromega-bold text-customBlue sm:text-4xl md:text-[40px]">
                 Tiến Bộ Số Hóa
               </h2>
-              <p className="text-lg text-gray-500">
+              <p className="text-lg font-bromega-light-italic text-gray-500">
                 Thúc đẩy sự phát triển của sự hiện diện trực tuyến của bạn thông
                 qua các giải pháp công nghệ tiên tiến, phân tích mạnh mẽ và đội
                 ngũ chuyên gia được đào tạo chuyên nghiệp.
@@ -56,10 +56,11 @@ const Features = () => {
               <div>
                 <h3
                   ref={ref1}
-                  className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500"
+                  className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-customBlue"
                 >
                   TYF - Take care of Your Future
                 </h3>
+                <hr class="border-t border-customBlue my-4 w-[200px]"></hr>
                 <div className="mt-8 space-y-8">
                   <motion.div
                     variants={{
@@ -72,7 +73,7 @@ const Features = () => {
                     className="flex"
                   >
                     <div>
-                      <p className="text-justify font-black">
+                      <p className="font-bromega-bold-italic text-justify font-black">
                         TYF ra đời với sứ mệnh trở thành giải pháp toàn diện cho
                         việc gia sư và trông trẻ, nâng cao chất lượng giáo dục
                         và chăm sóc trẻ em. Chúng tôi sẽ giúp bạn xóa tan mọi lo
@@ -94,7 +95,7 @@ const Features = () => {
                     className="flex"
                   >
                     <div>
-                      <p className="text-justify">
+                      <p className="font-bromega-light-italic text-justify">
                         Đúng như tên gọi: TYF - nghĩa là Take care of Your
                         Future, chúng ta cùng xây dựng tương lai cho con trẻ.
                         Gia sư của TYF Company sẽ luôn đồng hành cùng con, giúp
@@ -117,7 +118,7 @@ const Features = () => {
                     className="flex"
                   >
                     <div>
-                      <p className="text-justify">
+                      <p className="font-bromega-light-italic text-justify">
                         TYF luôn tâm niệm rằng sự thành công và phát triển toàn
                         diện của thế hệ trẻ chính là sứ mệnh quan trọng nhất.
                         Chúng tôi không ngừng đổi mới và sáng tạo để mang đến
@@ -157,10 +158,11 @@ const Features = () => {
               <div className="lg:col-start-2">
                 <h3
                   ref={ref2}
-                  className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500"
+                  className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-customBlue"
                 >
                   Gia sư tại Trung tâm TYF
                 </h3>
+                <hr class="border-t border-customBlue my-4 w-[150px]"></hr>
                 <div className="mt-8 space-y-8">
                   <motion.div
                     variants={{
@@ -172,7 +174,7 @@ const Features = () => {
                     transition={{ duration: 0.5, delay: 0.15 }}
                     className="flex"
                   >
-                    <p className="text-justify">
+                    <p className="font-bromega-light-italic text-justify">
                       Trung tâm TYF cung cấp dịch vụ gia sư chuyên nghiệp, giúp
                       học sinh cải thiện kiến thức và kỹ năng học tập. Đội ngũ
                       gia sư tại TYF được tuyển chọn kỹ lưỡng, có trình độ
@@ -205,10 +207,11 @@ const Features = () => {
               <div>
                 <h3
                   ref={ref3}
-                  className="text-2xl font-bold tracking-tight sm:text-3xl text-blue-500"
+                  className="text-2xl font-bromega-bold tracking-tight sm:text-3xl text-customBlue"
                 >
                   Trông trẻ
                 </h3>
+                <hr class="border-t border-customBlue my-4 w-[70px]"></hr>
                 <div className="mt-8 space-y-8">
                   <motion.div
                     variants={{
@@ -221,7 +224,7 @@ const Features = () => {
                     className="flex"
                   >
                     <div>
-                      <p className="text-justify">
+                      <p className="font-bromega-light-italic text-justify">
                         Trung tâm TYF cung cấp dịch vụ trông trẻ an toàn và tận
                         tâm. Đội ngũ nhân viên trông trẻ tại TYF được đào tạo
                         chuyên nghiệp, yêu trẻ và có kỹ năng chăm sóc tốt. Họ

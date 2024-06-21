@@ -50,14 +50,15 @@ const Services = () => {
               <div className="w-full px-4">
                 <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
                   <span className="block mb-2 text-lg font-semibold text-gray-500">
-                    Our Services
+                    Dịch vụ của chúng tôi
                   </span>
                   <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                    What We Offer
+                    What we offer
                   </h2>
                   <p className="text-lg text-gray-500">
-                    In the world of web development, we offer a wide range of
-                    solutions to cater to your unique needs.
+                    Trong sự phát triển của lĩnh vực web, chúng tôi đưa ra đa dạng các giải pháp để đáp ứng những nhu cầu đặc biệt dành cho bạn
+
+
                   </p>
                 </div>
               </div>
@@ -121,13 +122,12 @@ const Services = () => {
           <div className="mx-auto mb-12 text-center lg:mb-20">
             <span className="block mb-2 text-lg font-semibold text-gray-500"></span>
             <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-              More Than 10 Years We Provide Services
+              Hơn 10 năm hoạt động
               <br className="md:block hidden" />
-              All over the World
+              Trên toàn thế giới
             </h2>
             <p className="text-lg text-gray-500">
-              There are many variations of passages of Lorem Ipsum available but
-              the majority have suffered alteration in some form
+            Có nhiều biến thể của các đoạn văn Lorem Ipsum có sẵn nhưng phần lớn đã bị thay đổi dưới một hình thức nào đó,
             </p>
           </div>
           <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center">

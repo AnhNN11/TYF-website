@@ -22,6 +22,9 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
+      colors: {
+        customBlue: '#00ADEE',
+      }
     },
   },
 

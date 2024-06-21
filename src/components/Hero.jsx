@@ -45,7 +45,7 @@ const Hero = () => {
                   transition={{ duration: 0.75, delay: 0.25 }}
                 >
                   <h1
-                    className="sm:text-9xl text-5xl from-blue-500 to-emerald-600 mb-3 xl:mt-20
+                    className="sm:text-9xl text-5xl from-customBlue to-emerald-600 mb-3 xl:mt-20
                     leading-snug sm:text-[52px] lg:text-[50px] xl:text-[52px] font-BROmegaVN-Light z-20"
                   >
                     Chào mừng đến <br />
@@ -64,7 +64,7 @@ const Hero = () => {
                       transition={{ duration: 0.5, delay: 0.35 }}
                     >
                       <div className="sm:text-8xl text-7xl xl:my-50 relative ">
-                        <span className="text-blue-500 cursor-pointer ">
+                        <span className="text-customBlue cursor-pointer ">
                           TYF Company
                           <motion.div
                             variants={{
@@ -84,7 +84,7 @@ const Hero = () => {
                               bottom: -20,
                               left: 0,
                               right: 0,
-                              background: "#3498db",
+                              background: "#00aeef",
                               zIndex: 20,
                             }}
                           />
@@ -114,7 +114,7 @@ const Hero = () => {
                     <li>
                       <Link
                         to="#"
-                        className="bg-blue-500 border-solid border-2 border-blue-500 hover:border-blue-700 hover:bg-blue-700 transition ease-in-out delay-100
+                        className="bg-customBlue border-solid border-2 border-customBlue hover:border-blue-500 hover:bg-blue-500 transition ease-in-out delay-100
                         inline-flex items-center justify-center rounded-lg py-4 px-6 text-center text-base text-white sm:px-10 lg:px-8 xl:px-10"
                       >
                         Bắt đầu
@@ -123,7 +123,7 @@ const Hero = () => {
                     <li>
                       <Link
                         to="#"
-                        className="border-solid border-2 border-blue-500 text-black hover:bg-blue-500 hover:text-white transition ease-in-out delay-100
+                        className="border-solid border-2 border-customBlue text-black hover:bg-blue-500 hover:text-white transition ease-in-out delay-100
                         ml-6 inline-flex items-center justify-center rounded-lg py-4 px-6 text-centersm:px-10 lg:px-8 xl:px-10"
                       >
                         Tài liệu

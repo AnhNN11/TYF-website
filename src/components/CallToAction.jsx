@@ -14,11 +14,11 @@ const CallToAction = () => {
   }, [isInView]);
   return (
     <div>
-      <div className="w-[70%]  h-[2px] bg-gradient-to-r from-blue-200 to-blue-500"></div>
+      <div className="w-[70%]  h-[2px] bg-gradient-to-r from-blue-200 to-customBlue"></div>
       <>
         <section className="py-20 lg:py-[120px]  ">
-          <div className="bg-[#00ADEE] relative z-10 sm:-mt-10 sm:-mb-10 overflow-x-hidden rounded py-12 px-8 md:p-[70px]">
-            <div className="-mx-4 flex flex-wrap items-center">
+          <div className="bg-[#00ADEE] relative sm:-mt-10 sm:-mb-10 overflow-x-hidden rounded py-12 px-8 md:p-[70px]">
+            <div className="-mx-4 flex flex-wrap items-center ">
               <motion.div
                 ref={ref}
                 variants={{
@@ -30,7 +30,7 @@ const CallToAction = () => {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="w-full px-4 lg:w-1/2"
               >
-                <h2 className=" text-3xl font-bromega-bold leading-tight text-white sm:text-[38px] ">
+                <h2 className=" text-3xl font-bromega-bold leading-tight text-white sm:text-[38px] z-10  ">
                   Ươm mầm tương lai của con bạn !{" "}
                 </h2>
                 <p className="text-white text-lg text-justify font-bromega-light">
@@ -64,7 +64,7 @@ const CallToAction = () => {
               </div>
             </div>
             <div>
-              <span className="absolute top-0 left-0 z-[1] ">
+              <span className="absolute top-0 left-0 ">
                 <svg
                   width="189"
                   height="162"
@@ -83,7 +83,7 @@ const CallToAction = () => {
                   <defs></defs>
                 </svg>
               </span>
-              <span className="absolute bottom-0 right-0 z-[1]">
+              <span className="absolute bottom-0 right-0">
                 <svg
                   width="191"
                   height="208"
@@ -117,7 +117,7 @@ const CallToAction = () => {
           </div>
         </section>
       </>
-      <div className="flex justify-end ml-[30%] w-[70%] h-[2px] bg-gradient-to-r from-blue-200 to-blue-500"></div>
+      <div className="flex justify-end ml-[30%] w-[70%] h-[2px] bg-gradient-to-r from-blue-200 to-customBlue"></div>
     </div>
   );
 };
