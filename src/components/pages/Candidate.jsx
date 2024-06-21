@@ -99,7 +99,7 @@ const CandidatePage = () => {
         <div className="  p-8  mb-6">
           
           <h1 className=" flex justify-center text-5xl text-customBlue font-bromega-bold  mb-2">
-            Danh sách ứng viên
+            Danh sách gia sư
           </h1>
           <p className="flex justify-center font-bromega-light">
             Tại đây, bạn có thể tìm thấy thông tin về những sinh viên tuyệt vời
