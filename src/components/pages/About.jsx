@@ -237,7 +237,7 @@ const About = () => {
       <div className="w-[70%] h-[3px] bg-gradient-to-r from-blue-700 to-blue-400"></div>
       {/* Team Members */}
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white ">
         <div className="py-6 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -254,7 +254,7 @@ const About = () => {
             {teamMembers?.map((member, memberIndex) => (
               <div
                 key={member.id || memberIndex}
-                className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+                className="items-center bg-gray-50 rounded-lg shadow sm:flex"
               >
                 <a href="#">
                   {/* Image can be dynamically added here if needed */}
