@@ -213,7 +213,9 @@ const Blogs = () => {
           </motion.div>
         </div>
       </section>
+      
       <Footer />
+      
     </>
   );
 };

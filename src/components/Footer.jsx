@@ -2,6 +2,7 @@ import React from "react";
 import heroImage from "./images/Logo.png";
 import ScrollToTop from "react-scroll-up";
 import "./styles/footer.css";
+import { ArrowUpOutlined } from "@ant-design/icons"; 
 const Footer = () => {
   return (
     <>
@@ -107,8 +108,8 @@ const Footer = () => {
           </div>
         </footer>
         <ScrollToTop showUnder={160}>
-          <div className="bg-blue-500 w-10 h-10 text-white rounded-full flex items-center justify-center">
-            <span>Top</span>
+          <div className="bg-blue-500 w-10 h-10 text-white rounded-full flex items-center justify-center z-100">
+            <span> <ArrowUpOutlined /> </span>
           </div>
         </ScrollToTop>
       </div>

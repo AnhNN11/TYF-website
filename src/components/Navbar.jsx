@@ -4,6 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Button, Modal, Space } from "antd";
 import TeachImage from "./images/gia-su.png";
+import GoogleImg from "./images/google.webp";
+import FacebookImg from "./images/facebook.png"
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation(); // Lấy đường dẫn hiện tại
@@ -38,47 +40,42 @@ const Navbar = () => {
           <div className="flex">
             <ul className="sm:flex justify-center hidden">
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/")
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "hover:text-blue-800 hover:border-b-2 hover:border-blue-500"
-                }`}
+                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                  }`}
               >
                 <Link to="/">Trang chủ</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/about")
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "hover:text-blue-800 hover:border-b-2 hover:border-blue-500"
-                }`}
+                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/about")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                  }`}
               >
                 <Link to="/about">Về chúng tôi</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/services")
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "hover:text-blue-800 hover:border-b-2 hover:border-blue-500"
-                }`}
+                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/services")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                  }`}
               >
                 <Link to="/services">Sản phẩm & Giải pháp</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/blogs")
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "hover:text-blue-800 hover:border-b-2 hover:border-blue-500"
-                }`}
+                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/blogs")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                  }`}
               >
                 <Link to="/blogs">Bài viết</Link>
               </li>
               <li
-                className={`p-2 font-bold cursor-pointer ${
-                  isActive("/contact")
-                    ? "text-blue-500 border-b-2 border-blue-500"
-                    : "hover:text-blue-800 hover:border-b-2 hover:border-blue-500"
-                }`}
+                className={`p-2 font-bold cursor-pointer ${isActive("/contact")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                  }`}
               >
                 <Link to="/contact">Kết nối</Link>
               </li>
@@ -88,7 +85,7 @@ const Navbar = () => {
             <button
               onClick={showModal}
               type="button"
-              className="bg-blue-600 px-4 py-2 text-white font-BROmegaVN-Regular hidden sm:block rounded-3xl mr-2 hover:bg-blue-500"
+              className="bg-customBlue px-4 py-2 text-white font-BROmegaVN-Regular hidden sm:block rounded-3xl mr-2 hover:bg-blue-500"
             >
               Bắt đầu
             </button>
@@ -99,50 +96,45 @@ const Navbar = () => {
         </div>
 
         {/* Mobile nav */}
-        <div className={`${open ? null : "hidden"} h-[20rem]`}>
+        {/* <div className={`${open ? null : "hidden"} h-[20rem]`}>
           <ul>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 pt-6 ${
-                isActive("/")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 pt-6 ${isActive("/")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-              }`}
+                }`}
             >
               <Link to="/">Home</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/about")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/about")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-              }`}
+                }`}
             >
               <Link to="/about">About</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/services")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/services")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-              }`}
+                }`}
             >
               <Link to="/services">Services</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/blogs")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/blogs")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-              }`}
+                }`}
             >
               <Link to="/blogs">Blogs</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/contact")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/contact")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-              }`}
+                }`}
             >
               <Link to="/contact">Contact</Link>
             </li>
@@ -155,36 +147,36 @@ const Navbar = () => {
               Get Started
             </button>
           </div>
-        </div>
+        </div> */}
       </nav>
-
+      
       <Modal
-        title="Login"
+        title=""
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
         width={1000}
         height={320}
         footer=""
+   
       >
         <div className="flex ">
           <div className="p-6 md:p-20">
-            <h2 className="font-mono mb-5 text-4xl font-bold">Log In</h2>
-            <p className="max-w-sm mb-12 font-sans font-light text-gray-600">
-              Log in to your account to upload or download pictures, videos, or
-              music.
+            <h2 className="font-bromega-bold mb-5 text-4xl font-bold">Đăng kí</h2>
+            <p className="font-bromega-regular max-w-sm mb-12 font-sans font-light text-gray-600">
+             Đăng kí để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
             </p>
             <input
               type="text"
-              className="w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
-              placeholder="Enter your email address"
+              className="font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+              placeholder="Nhập email của bạn"
             />
 
             {/* Adjusted div for better responsiveness and layout */}
-            <div className="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
-              <div className="font-thin text-cyan-700">Forgot password</div>
-              <button className="w-full h-2 md:w-auto flex justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150">
-                <Link to={`/candidates`}>Next</Link>
+            <div className="font-bromega-regular flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+              <div className="font text-customBlue">Quên mật khẩu</div>
+              <button className="w-full h-2 md:w-auto flex justify-center items-center p-6 space-x-4 font-bold text-white rounded-md shadow-lg px-9 bg-customBlue shadow-customBlue hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150">
+                <span>Tiếp tục</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-7"
@@ -202,28 +194,28 @@ const Navbar = () => {
 
             <div className="mt-12 border-b border-b-gray-300"></div>
 
-            <p className="py-6 text-sm font-thin text-center text-gray-400">
-              or log in with
+            <p className="font-bromega-regular py-6 text-sm font-thin text-center text-gray-400">
+              Hoặc đăng nhập bằng
             </p>
 
             {/* Adjusted div for social buttons */}
-            <div className="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+            <div className="font-bromega-regular flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
               <button className="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2">
-                <img src="images/facebook.png" alt="" className="w-9" />
+                <img src={FacebookImg} alt="" className="w-7" />
                 <span className="font-thin">Facebook</span>
               </button>
               <button className="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2">
-                <img src="images/google.png" alt="" className="w-9" />
+                <img src={GoogleImg} alt="" className="w-6" />
                 <span className="font-thin">Google</span>
               </button>
             </div>
+
           </div>
-          <img
-            src={TeachImage}
-            alt=""
-            className="w-[450px] h-[410px] mt-20 hidden md:block"
-          />
+          <img src={TeachImage} alt="" className="w-[450px] h-[410px] mt-20 hidden md:block" />
         </div>
+
+
+
       </Modal>
     </div>
   );

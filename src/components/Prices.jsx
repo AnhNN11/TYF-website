@@ -22,7 +22,7 @@ const Prices = () => {
     <div className="max-w-screen overflow-x-hidden font-poppins">
       <div className="w-full py-[10rem] px-4  -mt-28">
         <div className="mx-auto mb-12 text-center lg:mb-20">
-          <h2 className="mb-4 text-3xl font-bromega-bold text-blue-500 sm:text-4xl md:text-[40px]">
+          <h2 className="mb-4 text-3xl font-bromega-bold text-customBlue sm:text-4xl md:text-[40px]">
             Dịch vụ của chúng tôi
           </h2>
           <p className="text-lg text-gray-500 font-bromega-light">
@@ -54,10 +54,10 @@ const Prices = () => {
                 Feature2={"Thời gian linh hoạt"}
                 Feature3={"Tiết kiệm thời gian di chuyển"}
                 Feature4={"Môi trường học tập thoải mái"}
-                iconColor1={"text-blue-500"}
-                iconColor2={"text-blue-500"}
-                iconColor3={"text-blue-500"}
-                iconColor4={"text-blue-500"}
+                iconColor1={"text-customBlue"}
+                iconColor2={"text-customBlue"}
+                iconColor3={"text-customBlue"}
+                iconColor4={"text-customBlue"}
                 buttonBg={"bg-gray-300"}
                 hoverBgButton={"hover:bg-gray-200"}
               />
@@ -81,10 +81,10 @@ const Prices = () => {
                 Feature2={"Lịch trình linh hoạt"}
                 Feature3={"Giảm áp lực phụ huynh"}
                 Feature4={"Môi trường an toàn"}
-                iconColor1={"text-blue-500"}
-                iconColor2={"text-blue-500"}
-                iconColor3={"text-blue-500"}
-                iconColor4={"text-blue-500"}
+                iconColor1={"text-customBlue"}
+                iconColor2={"text-customBlue"}
+                iconColor3={"text-customBlue"}
+                iconColor4={"text-customBlue"}
                 buttonBg={"bg-gray-300"}
                 hoverBgButton={"hover:bg-gray-200"}
               />
