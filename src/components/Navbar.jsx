@@ -167,16 +167,22 @@ const Navbar = () => {
         <div className="flex ">
           <div className="p-6 md:p-20">
             <h2 className="font-bromega-bold mb-5 text-4xl font-bold">
-              Đăng kí
+              Đăng nhập
             </h2>
-            <p className="font-bromega-regular max-w-sm mb-12 font-sans font-light text-gray-600">
-              Đăng kí để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
+            <p className="font-bromega-regular max-w-sm mb-6 font-sans font-light text-gray-600">
+              Đăng nhập để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
             </p>
             <input
               type="text"
-              className="font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+              className="mb-1 font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
               placeholder="Nhập email của bạn"
             />
+            <input
+              type="password"
+              className="my-1 font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+              placeholder="Nhập mật khẩu của bạn"
+            />
+           
 
             {/* Adjusted div for better responsiveness and layout */}
             <div className="font-bromega-regular flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
