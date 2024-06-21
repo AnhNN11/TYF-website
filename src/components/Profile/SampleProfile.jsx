@@ -6,34 +6,88 @@ import { FaStarOfDavid } from "react-icons/fa";
 // Sample data array
 const candidates = [
   {
-    name: " Nhật Anh",
-    points: 95,
-    avatarURL:
-      "https://th.bing.com/th/id/OIP.9F-3w9sVCDc05rZ1Z2bMTgHaJQ?w=202&h=253&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    candidateId: "1",
+    name: "Đoàn Đoàn",
+    role: "Tutor",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-101.jpg",
   },
   {
-    name: " Nhật Anh",
-    points: 95,
-    avatarURL:
-      "https://th.bing.com/th/id/OIP.9F-3w9sVCDc05rZ1Z2bMTgHaJQ?w=202&h=253&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    candidateId: "2",
+    name: "Nguyễn Thảo Vy",
+    role: "Babysister",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-103.jpg",
+  },
+{
+    candidateId: "3",
+    name: "Trương Anh Đào",
+    role: "Babysister",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-106.jpg",
   },
   {
-    name: " Nhật Anh",
-    points: 95,
-    avatarURL:
-      "https://th.bing.com/th/id/OIP.9F-3w9sVCDc05rZ1Z2bMTgHaJQ?w=202&h=253&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    candidateId: "4",
+    name: "Lê Văn Đạt",
+    role: "Tutor",
+    imageUrl:
+      "https://inkythuatso.com/uploads/thumbnails/800/2022/03/a-31-14-06-48.jpg",
+  },
+{
+    candidateId: "5",
+    name: "Nguyễn Hưng",
+    role: "Tutor",
+    imageUrl:
+      "https://bedental.vn/wp-content/uploads/2022/11/d42317ab8e6777e08644dd51d8c70a72.jpg",
   },
   {
-    name: " Nhật Anh",
-    points: 95,
-    avatarURL:
-      "https://th.bing.com/th/id/OIP.9F-3w9sVCDc05rZ1Z2bMTgHaJQ?w=202&h=253&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    candidateId: "6",
+    name: "Kim Huệ",
+    role: "Babysister",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-107.jpg",
+  },
+{
+    candidateId: "7",
+    name: "Thanh Huyền",
+    role: "Babysister",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-115.jpg",
   },
   {
-    name: " Nhật Anh",
-    points: 95,
-    avatarURL:
-      "https://th.bing.com/th/id/OIP.9F-3w9sVCDc05rZ1Z2bMTgHaJQ?w=202&h=253&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    candidateId: "8",
+    name: "Thục Nhi",
+    role: "Babysister",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-116.jpgCEoQAA",
+  },
+{
+    candidateId: "9",
+    name: "Đào Đông Anh",
+    role: "Tutor",
+    imageUrl:
+      "https://res.cloudinary.com/dtdars0ah/image/upload/v1718987395/vqee8yhmhvyq5huu5dft.jpg",
+  },
+  {
+    candidateId: "10",
+    name: "Nguyễn Thảo Vy",
+    role: "Tutor",
+    imageUrl:
+      "https://mega.com.vn/media/news/0406_anh-gai-xinh-117.jpg",
+  },
+{
+    candidateId: "11",
+    name: "Đào Anh Trúc",
+    role: "Tutor",
+    imageUrl:
+      "https://vienthammydiva.vn/wp-content/uploads/2022/07/anh-gai-dep-toc-ngan-che-mat-1.jpg",
+  },
+  {
+    candidateId: "12",
+    name: "Lê Nhật Trường",
+    role: "Babysister",
+    imageUrl:
+      "https://bedental.vn/wp-content/uploads/2022/11/1e8063154fdf3dcbb07edf0ad2df326a.jpg",
   },
 ];
 
