@@ -2,7 +2,7 @@ import { Button, Modal } from "antd";
 import React, { useState } from "react";
 
 const imageUrl =
-  "https://images2.thanhnien.vn/Uploaded/quochung-qc/2022_06_23/fpt-1-3802.png";
+  "https://res.cloudinary.com/dehk1bcny/image/upload/v1718968685/lpgvfieyn7l8axasl8lp.jpg";
 
 function ViewMark() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -22,12 +22,12 @@ function ViewMark() {
   return (
     <>
       <Button type="primary" onClick={handleButtonClick}>
-        Open Image
+        Chứng chỉ
       </Button>
 
       {/* Modal to display the image */}
       <Modal
-        title="Image Preview"
+        title="Hình ảnh chứng chỉ "
         visible={modalVisible}
         onCancel={handleModalClose}
         footer={null}

@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Avatar } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import CandidateImage from "./CandidateImage";
+import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -16,9 +17,9 @@ const CandidateCard = ({ candidate }) => {
         />
       }
       actions={[
-        <a key="more" href={`/candidates/${candidate.candidateId}`}>
+        <Link key="more" to={`/candidates/${candidate.candidateId}`}>
           More
-        </a>,
+        </Link>,
       ]}
       className="group-hover:shadow-lg transition-transform transform duration-300 ease-in-out"
     >

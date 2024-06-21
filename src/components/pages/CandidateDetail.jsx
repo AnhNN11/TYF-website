@@ -6,16 +6,14 @@ import Certifications from "../Profile/Certifications";
 import Profile from "../Profile/Profile";
 
 function CandidateDetail() {
-  const { state } = useLocation();
-  const { candidate } = state || {};
   return (
-    <div>
+    <div className="p-8">
       {" "}
       <Row gutter={20} className="mt-4">
-        <Col span={17}>
-          <Profile candidate={candidate}></Profile>
+        <Col span={18}>
+          <Profile></Profile>
         </Col>
-        <Col span={7}>
+        <Col span={6}>
           <SampleProfile></SampleProfile>
         </Col>
       </Row>
