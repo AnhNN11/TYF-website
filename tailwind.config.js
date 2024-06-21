@@ -24,6 +24,7 @@ export default {
       },
       colors: {
         customBlue: '#00ADEE',
+        navbarColor: '#E6F0FE',
       }
     },
   },

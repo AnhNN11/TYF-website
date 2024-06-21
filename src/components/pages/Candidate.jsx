@@ -10,17 +10,34 @@ const { Meta } = Card;
 const candidates = [
   {
     candidateId: "1",
-    name: "John Doe",
-    role: "Software Engineer",
+    name: "Phan Quốc Thái Bảo",
+    role: "Gia sư tiêu biểu",
     imageUrl:
-      "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/271158089_608241573569093_8522388516126255361_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF4aWL1tEDOASebCx9W-xgqlQGufD3YA72VAa58PdgDvUktilpAfhqtG1RtbTc5wxYZURbvYO6HKGddbiFrrm3W&_nc_ohc=b_L36w8sSoIQ7kNvgEWW2Gr&_nc_ht=scontent.fdad1-3.fna&oh=00_AYDd-8X2cuW56gUwlELiG1Dim49l_HIpVSY6Zw8NKa5fpg&oe=667A2C6F",
+      "https://res.cloudinary.com/dtdars0ah/image/upload/v1718983013/wce34i2em5jjgy0ipbg1.jpg",
   },
+  
   {
     candidateId: "2",
-    name: "Jane Doe",
-    role: "Product Manager",
+    name: "Lê Thế Bảo",
+    role: "Gia sư tiêu biểu",
     imageUrl:
-      "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/271158089_608241573569093_8522388516126255361_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF4aWL1tEDOASebCx9W-xgqlQGufD3YA72VAa58PdgDvUktilpAfhqtG1RtbTc5wxYZURbvYO6HKGddbiFrrm3W&_nc_ohc=b_L36w8sSoIQ7kNvgEWW2Gr&_nc_ht=scontent.fdad1-3.fna&oh=00_AYDd-8X2cuW56gUwlELiG1Dim49l_HIpVSY6Zw8NKa5fpg&oe=667A2C6F",
+      "https://res.cloudinary.com/dtdars0ah/image/upload/v1718983412/qpgnwtm1qcpthuesypse.jpg",
+  },
+
+  {
+    candidateId: "3",
+    name: "Nguyễn Văn Hoàng Phúc",
+    role: "Gia sư trẻ",
+    imageUrl:
+      "https://res.cloudinary.com/dtdars0ah/image/upload/v1718983479/vfxcr9jcdqvsxa7nvazc.jpg",
+  },
+
+  {
+    candidateId: "4",
+    name: "Đinh Bảo Hân",
+    role: "Gia sư trẻ",
+    imageUrl:
+      "https://res.cloudinary.com/dtdars0ah/image/upload/v1718983557/o5cpgizhpxzizxke6zpr.jpg",
   },
   // Add more candidates as needed
 ];

@@ -27,7 +27,7 @@ const Navbar = () => {
   };
   return (
     <div className="font-bromega-regular">
-      <nav className="bg-custom-blue px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-300">
+      <nav className="bg-navbarColor px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-300">
         {/* Desktop nav */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:px-4 pb-2 pt-2 text-black">
           <Link to="/" className="flex items-start">

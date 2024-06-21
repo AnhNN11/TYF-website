@@ -18,7 +18,7 @@ const CandidateCard = ({ candidate }) => {
       }
       actions={[
         <Link key="more" to={`/candidates/${candidate.candidateId}`}>
-          More
+          Thông tin chi tiết
         </Link>,
       ]}
       className="group-hover:shadow-lg transition-transform transform duration-300 ease-in-out"
