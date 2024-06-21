@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Button, Modal, Space } from "antd";
 import TeachImage from "./images/gia-su.png";
 import GoogleImg from "./images/google.webp";
-import FacebookImg from "./images/facebook.png"
+import FacebookImg from "./images/facebook.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation(); // Lấy đường dẫn hiện tại
@@ -40,42 +40,47 @@ const Navbar = () => {
           <div className="flex">
             <ul className="sm:flex justify-center hidden">
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/")
+                className={`p-2 mr-2 font-bold cursor-pointer ${
+                  isActive("/")
                     ? "text-customBlue border-b-2 border-customBlue"
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                  }`}
+                }`}
               >
                 <Link to="/">Trang chủ</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/about")
+                className={`p-2 mr-2 font-bold cursor-pointer ${
+                  isActive("/about")
                     ? "text-customBlue border-b-2 border-customBlue"
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                  }`}
+                }`}
               >
                 <Link to="/about">Về chúng tôi</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/services")
+                className={`p-2 mr-2 font-bold cursor-pointer ${
+                  isActive("/services")
                     ? "text-customBlue border-b-2 border-customBlue"
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                  }`}
+                }`}
               >
                 <Link to="/services">Sản phẩm & Giải pháp</Link>
               </li>
               <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${isActive("/blogs")
+                className={`p-2 mr-2 font-bold cursor-pointer ${
+                  isActive("/blogs")
                     ? "text-customBlue border-b-2 border-customBlue"
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                  }`}
+                }`}
               >
                 <Link to="/blogs">Bài viết</Link>
               </li>
               <li
-                className={`p-2 font-bold cursor-pointer ${isActive("/contact")
+                className={`p-2 font-bold cursor-pointer ${
+                  isActive("/contact")
                     ? "text-customBlue border-b-2 border-customBlue"
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                  }`}
+                }`}
               >
                 <Link to="/contact">Kết nối</Link>
               </li>
@@ -149,7 +154,7 @@ const Navbar = () => {
           </div>
         </div> */}
       </nav>
-      
+
       <Modal
         title=""
         open={isModalOpen}
@@ -158,13 +163,14 @@ const Navbar = () => {
         width={1000}
         height={320}
         footer=""
-   
       >
         <div className="flex ">
           <div className="p-6 md:p-20">
-            <h2 className="font-bromega-bold mb-5 text-4xl font-bold">Đăng kí</h2>
+            <h2 className="font-bromega-bold mb-5 text-4xl font-bold">
+              Đăng kí
+            </h2>
             <p className="font-bromega-regular max-w-sm mb-12 font-sans font-light text-gray-600">
-             Đăng kí để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
+              Đăng kí để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
             </p>
             <input
               type="text"
@@ -175,7 +181,11 @@ const Navbar = () => {
             {/* Adjusted div for better responsiveness and layout */}
             <div className="font-bromega-regular flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
               <div className="font text-customBlue">Quên mật khẩu</div>
-              <button className="w-full h-2 md:w-auto flex justify-center items-center p-6 space-x-4 font-bold text-white rounded-md shadow-lg px-9 bg-customBlue shadow-customBlue hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150">
+              <Link
+                key="more"
+                to="/candidates/"
+                className="inline-flex justify-center items-center p-6 space-x-4 font-bold text-white rounded-md shadow-lg px-9 bg-customBlue shadow-customBlue hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150 w-full h-2 md:w-auto"
+              >
                 <span>Tiếp tục</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +199,7 @@ const Navbar = () => {
                   <line x1="13" y1="18" x2="19" y2="12" />
                   <line x1="13" y1="6" x2="19" y2="12" />
                 </svg>
-              </button>
+              </Link>
             </div>
 
             <div className="mt-12 border-b border-b-gray-300"></div>
@@ -209,13 +219,13 @@ const Navbar = () => {
                 <span className="font-thin">Google</span>
               </button>
             </div>
-
           </div>
-          <img src={TeachImage} alt="" className="w-[450px] h-[410px] mt-20 hidden md:block" />
+          <img
+            src={TeachImage}
+            alt=""
+            className="w-[450px] h-[410px] mt-20 hidden md:block"
+          />
         </div>
-
-
-
       </Modal>
     </div>
   );
