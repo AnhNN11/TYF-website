@@ -277,11 +277,11 @@ const Contact = () => {
             className="mx-auto mb-12 text-center lg:mb-20"
           >
             <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-              Our Location
+              Vị trí của bạn
             </h2>
             <p className="text-lg text-gray-500">
-              Visit us at our office! We'd love to meet you in person. Here's
-              where you can find us:
+              Hãy đến văn phòng của chúng tôi, chúng tôi luôn chào đón bạn!
+              Đây là nơi bạn có thể tìm thấy văn phòng của chúng tôi
             </p>
           </motion.div>
           <div className="flex justify-center mt-20" id="maps">

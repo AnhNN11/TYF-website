@@ -2,7 +2,8 @@ import React from "react";
 import { Card, Avatar, Breadcrumb } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import CandidateCard from "../Card/CandidateCard";
-
+import NavbarLogin from "../NavbarLogin.jsx";
+import Footer from "../Footer";
 const { Meta } = Card;
 
 // Example array of candidates
@@ -26,11 +27,10 @@ const candidates = [
 
 const CandidatePage = () => {
   return (
+    <>
+    <NavbarLogin/>
     <div>
-      <Breadcrumb style={{ margin: "16px 0" }}>
-        <Breadcrumb.Item>Trang chủ</Breadcrumb.Item>
-        <Breadcrumb.Item>Tài năng</Breadcrumb.Item>
-      </Breadcrumb>
+      
       <div
         style={{
           //   background: colorBgContainer,
@@ -38,16 +38,18 @@ const CandidatePage = () => {
           padding: 24,
           //   borderRadius: borderRadiusLG,
         }}
+        className="overflow-hidden bg-gradient-to-br from-blue-100"
       >
-        <div className="bg-white  p-8 rounded-lg mb-6">
-          <h1 className="text-4xl text-yellow-300 font-bold mb-2">
+        <div className="  p-8  mb-6">
+          
+          <h1 className=" flex justify-center text-5xl text-customBlue font-bromega-bold  mb-2">
             Danh sách ứng viên
           </h1>
-          <p>
+          <p className="flex justify-center font-bromega-light">
             Tại đây, bạn có thể tìm thấy thông tin về những sinh viên tuyệt vời
             của chúng tôi.
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <form className="w-full md:basis-[50%] sm:basis-[100%]">
               <label
                 htmlFor="default-search"
@@ -83,7 +85,7 @@ const CandidatePage = () => {
                 />
                 <button
                   type="submit"
-                  className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 "
+                  className="text-white absolute end-2.5 bottom-2.5 bg-customBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2  font-bromega"
                 >
                   Tìm kiếm
                 </button>
@@ -91,7 +93,7 @@ const CandidatePage = () => {
             </form>
           </div>
 
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap font-bromega-light">
             {candidates.map((candidate) => (
               <CandidateCard
                 key={candidate.candidateId}
@@ -102,6 +104,9 @@ const CandidatePage = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 };
 

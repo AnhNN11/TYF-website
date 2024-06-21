@@ -4,10 +4,14 @@ import SampleProfile from "../Profile/SampleProfile";
 import Skills from "../Profile/Skills";
 import Certifications from "../Profile/Certifications";
 import Profile from "../Profile/Profile";
+import NavbarLogin from "../NavbarLogin";
+import Footer from "../Footer";
 
 function CandidateDetail() {
   return (
-    <div className="p-8">
+    <>
+      <NavbarLogin/>
+      <div className="p-8 overflow-hidden bg-gradient-to-br from-blue-100">
       {" "}
       <Row gutter={20} className="mt-4">
         <Col span={18}>
@@ -28,6 +32,9 @@ function CandidateDetail() {
         </Col>
       </Row>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 

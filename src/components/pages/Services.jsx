@@ -53,7 +53,7 @@ const Services = () => {
                     Dịch vụ của chúng tôi
                   </span>
                   <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                    What we offer
+                    Chúng tôi mang đến
                   </h2>
                   <p className="text-lg text-gray-500">
                     Trong sự phát triển của lĩnh vực web, chúng tôi đưa ra đa dạng các giải pháp để đáp ứng những nhu cầu đặc biệt dành cho bạn
@@ -74,8 +74,8 @@ const Services = () => {
               className="flex flex-wrap -mx-4"
             >
               <ServiceCard
-                title="Custom Web Development"
-                details="Crafting unique web solutions tailored to your business, with a focus on innovation and functionality."
+                title="Tùy biến trang Web"
+                details="Tùy biến, xây dựng trang web của riêng bạn để có thể phục vụ những mục đích khác nhau"
                 icon={<FcBarChart style={{ fontSize: "7rem" }} />}
               />
               <ServiceCard
