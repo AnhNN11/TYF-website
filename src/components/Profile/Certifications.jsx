@@ -33,8 +33,8 @@ function Certifications() {
       <div className="relative h-full">
         <span className="absolute w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
         <div className="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
-          <div className="flex items-center -mt-1">
-            <h3 className="text-lg font-bold text-gray-800">Chứng chỉ</h3>
+          <div className="flex items-center -mt-1 ">
+            <h3 className="text-lg font-bromega-light text-gray-800  ">Chứng chỉ</h3>
           </div>
           <p className="text-xs font-medium text-blue-400 uppercase">
             ----------------------

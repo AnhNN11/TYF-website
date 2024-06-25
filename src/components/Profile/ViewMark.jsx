@@ -24,7 +24,7 @@ function ViewMark() {
       <Button
         type="primary"
         onClick={handleButtonClick}
-        className="bg-blue-600"
+        className="bg-customBlue rounded-full"
       >
         Chứng chỉ
       </Button>

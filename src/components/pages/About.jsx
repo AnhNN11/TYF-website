@@ -10,9 +10,9 @@ import SabMedia from "../images/Logo.png";
 const teamMembers = [
   {
     name: "Nguyễn Đoàn Salem",
-    role: "CTO",
+    role: "Designer",
     description:
-      "Jese drives the technical strategy of the flowbite platform and brand. ",
+      "Một người anh",
     image:
       "https://scontent.fdad3-1.fna.fbcdn.net/v/t1.15752-9/395637905_278201087929918_8420190409177866048_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFbb6QOLYGyC2XaBK7jxppXapdGM7GFZmtql0YzsYVma9bLhXJdgRFwG5wGIsLuqf4r00fl3jcw-MfpOKpqIyZc&_nc_ohc=c6tXW75A7joQ7kNvgEX6iNh&_nc_ht=scontent.fdad3-1.fna&oh=03_Q7cD1QFSQ5vFaxbzlCQf2Ax_qTIoELo_t11qoRw3yKzDsii23Q&oe=66993E5A",
     socialLinks: {
@@ -23,27 +23,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Nguyễn Bùi Phương Anh",
-    role: "CTO",
+    name: "Phan Quốc Thái Bảo",
+    role: "Leader - Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-      "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH-49Bs_F8DADQcZREZgmwC0UOBuPUht6DRQ4G49SG3oIUJe9P-fmFHGfunOzuSz2q5OwFVf6C11gevlJtdSogY&_nc_ohc=4Bo2yf623okQ7kNvgFdgaDN&_nc_ht=scontent.fdad3-1.fna&oh=00_AYAS1Vfvfews2DvaPHDsl2VFhdg0xU2YqG_hysccYxSTrQ&oe=667793FB",
-    socialLinks: {
-      twitter: "#",
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
-    },
-  },
-  {
-    name: "Nguyễn Dạ Quyên",
-    role: "CTO",
-    description:
-      "Jese drives the technical strategy of the flowbite platform and brand. ",
-
-    image:
-      "https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/240596727_227789349278150_9076578044773909062_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF16Pdbt5VWHLEtMH8a9zsnsCdH3nhA8DuwJ0feeEDwO8eAdpWzBEiT7IhBcKBibg6uwX0L9GqlSGhF2IJYmqDa&_nc_ohc=5zlwGAnr2E0Q7kNvgHuDlyu&_nc_ht=scontent.fdad3-1.fna&oh=00_AYDH3U321ndKXoOdvzZ6Ds0nxWMSCvbiQJ9AHjJq9Nxocg&oe=66778A52",
+    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980974/vqscv851llrtoif0bzwt.jpg",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -53,11 +38,12 @@ const teamMembers = [
   },
   {
     name: "Nguyễn Nhật Anh",
-    role: "CTO",
+    role: "Dev",
     description:
-      "Jese drives the technical strategy of the flowbite platform and brand.",
+      "Jese drives the technical strategy of the flowbite platform and brand. ",
+
     image:
-      "https://scontent.fdad3-1.fna.fbcdn.net/v/t1.6435-9/93158960_233963400996914_8978786156292341760_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHyC_pT96eHXr4iZ1VI4l0xj-O8wJCBAdeP47zAkIEB1yFgTWVFr7F5AOtqBoeeRQZnAEy3MwBm1VwQP00A1Ygu&_nc_ohc=CUASgc9yKfoQ7kNvgGLN3H2&_nc_ht=scontent.fdad3-1.fna&oh=00_AYCJjBZieceB80AywjUvDp9AqRz4vtzXI1EgqVBUK2Wpzw&oe=6699412B",
+      "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980698/iegmsdv9zsrdmuujyfrz.jpg",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -66,12 +52,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Huỳnh Văn Tín",
-    role: "CTO",
+    name: "Lê Thế Bảo",
+    role: "Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-      "https://scontent.fdad1-4.fna.fbcdn.net/v/t1.15752-9/448158920_493875789737453_5356450342645591299_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeELPbXryUAd9DjvCDsO_CsjcoEACN-fgdJygQAI35-B0t6p3eDI4BZ9FddMkye8yZ3FT1ob9Er0uz5qiR3cHnwN&_nc_ohc=T8bYTejgUNEQ7kNvgHg0PIW&_nc_ht=scontent.fdad1-4.fna&oh=03_Q7cD1QGYV7wtDYlzT0CvIphsrTkbK5H4M2VSHEZTUdOLnGeBWg&oe=66994A32",
+      "https://res.cloudinary.com/dehk1bcny/image/upload/v1718981037/wdjiogfni611daixilui.jpg",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -80,12 +66,27 @@ const teamMembers = [
     },
   },
   {
-    name: "Nguyễn Anh Quân",
-    role: "CTO",
+    name: "Nguyễn Văn Hoàng Phúc",
+    role: "Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-      "https://scontent.fdad1-2.fna.fbcdn.net/v/t1.15752-9/448693138_1870031186805158_7274096340955810742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgs1EjSanjhbJW6O33i0MAh_Sfpv7z2mGH9J-m_vPaYVAbZO4YJ-jEFilLOWHdTdY0WERnsw4gBLESvjm-Vro6&_nc_ohc=vs6Sdxfipr4Q7kNvgExJRfR&_nc_ht=scontent.fdad1-2.fna&oh=03_Q7cD1QE0FxoX6pAW5bvXCzzSlPQjd1GrkuI7URT9sY10NS5t3Q&oe=66993B16",
+    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980911/pgyjjuluatmdw4tfdb6r.jpg",
+    
+    socialLinks: {
+      twitter: "#",
+      facebook: "#",
+      linkedin: "#",
+      instagram: "#",
+    },
+  },
+  {
+    name: "Đinh Bảo Hân",
+    role: "Dev",
+    description:
+      "Jese drives the technical strategy of the flowbite platform and brand.",
+    image:
+    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980835/y0mugxhnyylzawnsjmis.jpg",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -167,10 +168,10 @@ const About = () => {
               transition={{ duration: 0.75, delay: 0.25 }}
               className="mx-auto mb-12 lg:pt-10 md:pt-20 sm:pt-40 max-sm:pt-20 text-center lg:mb-10 w-full"
             >
-              <h2 className="mb-2 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+              <h2 className="mb-2 text-3xl font-bromega-bold text-customBlue sm:text-4xl md:text-[40px]">
                 Tại sao chọn chúng tôi
               </h2>
-              <p className="text-lg text-gray-500">
+              <p className="text-lg font-bromega-light text-gray-500">
                 Chúng tôi có kinh nghiệm lâu năm trong lĩnh vực cung cấp giải
                 pháp giáo dục và hỗ trợ giảng dạy và trông trẻ
               </p>
@@ -187,7 +188,7 @@ const About = () => {
                 className="flex items-center -mx-3 sm:-mx-4"
               >
                 <div className="w-full px-3 sm:px-4">
-                  <div className="py-3 sm:py-4">
+                  <div className="py-3 sm:py-4 font-bromega-bold">
                     <img
                       src={SabMedia}
                       alt=""
@@ -205,7 +206,7 @@ const About = () => {
                 animate="visible"
                 transition={{ duration: 0.75, delay: 0.25 }}
               >
-                <div className="w-[10%] h-[3px] bg-gradient-to-r from-blue-700 to-blue-400"></div>
+                <div className="w-[20%] h-[3px] bg-gradient-to-r from-customBlue to-blue-200"></div>
                 {sections.map((section, index) => (
                   <div key={index}>
                     <h2
@@ -234,16 +235,16 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="w-[70%] h-[3px] bg-gradient-to-r from-blue-700 to-blue-400"></div>
+      <div className="w-[70%] h-[3px] bg-gradient-to-r from-customBlue to-blue-200"></div>
       {/* Team Members */}
 
       <section className="bg-white ">
         <div className="py-6 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 className="mb-2 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 className="mb-2 text-4xl tracking-tight font-bromega-bold text-customBlue ">
               Đội ngũ sáng lập
             </h2>
-            <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+            <p className="font-bromega-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
               Đội ngũ sáng lập là nhóm cá nhân chịu trách nhiệm khởi tạo và phát
               triển một doanh nghiệp, tổ chức hoặc dự án. Họ đóng vai trò quan
               trọng trong việc hình thành tầm nhìn, chiến lược và văn hóa của tổ
@@ -265,15 +266,14 @@ const About = () => {
                   />
                 </a>
                 <div className="p-5">
-                  <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    <a href="#">{member.name}</a>
+                  <h3 className="text-xl font-bold tracking-tight text-black-500 ">
+                    <a href="#">{member.name} </a>
+                    
                   </h3>
-                  <span className="text-gray-500 dark:text-gray-400">
+                  <span className="text-black-500 ">
                     {member.role}
                   </span>
-                  <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                    {member.description}
-                  </p>
+                  
                   <div className="flex mt-4">
                     <a
                       href={member.socialLinks.twitter}
@@ -306,7 +306,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="flex justify-end ml-[30%] w-[70%] h-[2px] bg-gradient-to-r from-blue-200 to-blue-500"></div>
+      <div className="flex justify-end ml-[30%] w-[70%] h-[2px] bg-gradient-to-r from-blue-200 to-customBlue"></div>
 
       <Footer />
     </div>

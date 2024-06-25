@@ -46,7 +46,7 @@ const Review = () => {
                   initial="hidden"
                   animate={mainControlls}
                   transition={{ duration: 0.6, delay: 0.15 }}
-                  className="p-6 rounded-lg shadow-lg bg-white mt-6 font-bromega-light-italic"
+                  className="p-6 rounded-lg shadow-lg bg-white mt-6 font-bromega-light"
                 >
                   <p>
                   Tôi đã sừ dụng dịch vụ của công ty và cực kì hài lòng với nó. Từ lúc được học tập với gia sư bên mình, kết quả học tập của con tôi đã cải thiện một cách nhanh chóng và rõ rệt. Đồng thời, chất lượng và chuyên môn của gia sư cũng rất tuyệt vời, ngoài sức mong đợi của tôi. Tôi khuyến khích mọi người nên sử dụng dịch vụ của công ty, rất xứng đáng !
@@ -81,7 +81,7 @@ const Review = () => {
                   initial="hidden"
                   animate={mainControlls}
                   transition={{ duration: 0.6, delay: 0.35 }}
-                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light-italic "
+                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light "
                 >
                   <p>
                   Một điểm mạnh khác của TYF Childcare Center là chương trình học sáng tạo và phù hợp. Tôi rất hài lòng với cách mà các hoạt động giáo dục được thiết kế để khuyến khích sự sáng tạo, tư duy logic và phát triển toàn diện của trẻ em. Các em được tham gia vào các hoạt động thể chất, nghệ thuật, và trò chơi học thuật một cách tự nhiên và vui vẻ. Tôi thấy rằng các em không chỉ học hỏi mà còn phát triển kỹ năng xã hội và tạo ra những mối quan hệ tốt với bạn bè.
@@ -120,7 +120,7 @@ const Review = () => {
                   initial="hidden"
                   animate={mainControlls}
                   transition={{ duration: 0.7, delay: 0.55 }}
-                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light-italic"
+                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light"
                 >
                   <p>
                   Điều tôi thích nhất ở TYF Childcare Center là sự giao tiếp và tương tác thường xuyên với phụ huynh. Tôi luôn được thông báo về tiến trình và hoạt động của con em thông qua hội thảo, cuộc họp, và báo cáo cá nhân. Điều này giúp tôi cảm thấy liên kết và tham gia vào quá trình phát triển của con em một cách chặt chẽ. Tôi cũng có cơ hội chia sẻ ý kiến và quan ngại của mình và nhận được sự hỗ trợ và giải đáp từ nhân viên tận tâm của TYF Childcare Center.
@@ -157,7 +157,7 @@ const Review = () => {
                   initial="hidden"
                   animate={mainControlls}
                   transition={{ duration: 0.8, delay: 0.75 }}
-                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light-italic"
+                  className="p-6 rounded-lg shadow-lg bg-white font-bromega-light"
                 >
                   <p>
                   Tôi rất hài lòng với dịch vụ giữ trẻ tại TYF Childcare Center. Đây là một nơi tuyệt vời cho con em phát triển và sáng tạo trong một môi trường an toàn và chăm sóc. Tôi sẽ tiếp tục ủng hộ và khuyến khích mọi người sử dụng dịch vụ tại TYF Childcare Center.

@@ -77,12 +77,11 @@ const Blogs = () => {
           >
             <div className="w-full px-4">
               <div className="mx-auto mb-12 text-center lg:mb-20">
-                <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
+                <h2 className="mb-4 text-3xl font-bromega-bold text-customBlue sm:text-4xl md:text-[40px]">
                   Kênh Tuyển Dụng
                 </h2>
-                <p className="text-lg text-gray-500">
-                  In the ever-evolving world of web development, we share the
-                  latest trends and invaluable knowledge to keep you updated.
+                <p className="text-lg font-bromega-light text-gray-500">
+                    Đây là nơi đăng thông tin tuyển dụng của những người có nhu cầu từ khắp mọi nơi trên thế giới
                 </p>
               </div>
             </div>
@@ -150,7 +149,7 @@ const Blogs = () => {
             <button
               title="previous"
               type="button"
-              className={`inline-flex items-center justify-center w-8 h-8 py-0 rounded-md shadow-md dark:bg-blue-500 ${
+              className={`inline-flex items-center justify-center w-8 h-8 py-0 rounded-md shadow-md bg-customBlue ${
                 currentPage === 1
                   ? "opacity-50 cursor-not-allowed"
                   : "cursor-pointer"
@@ -176,8 +175,8 @@ const Blogs = () => {
                 <button
                   key={i}
                   type="button"
-                  className={`inline-flex items-center justify-center w-8 h-8 text-sm font-semibold rounded shadow-md dark:bg-blue-500 ${
-                    currentPage === i + 1 ? "bg-blue-700 text-white" : ""
+                  className={`inline-flex items-center justify-center w-8 h-8 text-sm font-semibold rounded shadow-md bg-customBlue ${
+                    currentPage === i + 1 ? "bg-blue-200 text-white" : ""
                   }`}
                   onClick={() => setCurrentPage(i + 1)}
                 >
@@ -188,7 +187,7 @@ const Blogs = () => {
             <button
               title="next"
               type="button"
-              className={`inline-flex items-center justify-center w-8 h-8 py-0 rounded-md shadow-md dark:bg-blue-500 ${
+              className={`inline-flex items-center justify-center w-8 h-8 py-0 rounded-md shadow-md bg-customBlue ${
                 currentPage === Math.ceil(blogData.length / blogsPerPage)
                   ? "opacity-50 cursor-not-allowed"
                   : "cursor-pointer"

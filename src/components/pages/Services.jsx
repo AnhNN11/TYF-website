@@ -49,13 +49,13 @@ const Services = () => {
             >
               <div className="w-full px-4">
                 <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                  <span className="block mb-2 text-lg font-semibold text-gray-500">
+                  <span className="block mb-2 text-lg font-bromega-light text-gray-500">
                     Dịch vụ của chúng tôi
                   </span>
-                  <h2 className="mb-4 text-3xl font-bold text-blue-500 sm:text-4xl md:text-[40px]">
-                    What we offer
+                  <h2 className="mb-4 text-3xl font-bromega-bold text-customBlue sm:text-4xl md:text-[40px]">
+                    Chúng tôi mang đến
                   </h2>
-                  <p className="text-lg text-gray-500">
+                  <p className="text-lg font-bromega-light text-gray-500">
                     Trong sự phát triển của lĩnh vực web, chúng tôi đưa ra đa dạng các giải pháp để đáp ứng những nhu cầu đặc biệt dành cho bạn
 
 
@@ -71,11 +71,11 @@ const Services = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 1, delay: 0.25 }}
-              className="flex flex-wrap -mx-4"
+              className="flex flex-wrap -mx-4 "
             >
               <ServiceCard
-                title="Custom Web Development"
-                details="Crafting unique web solutions tailored to your business, with a focus on innovation and functionality."
+                title="Tùy biến trang Web"
+                details="Tùy biến, xây dựng trang web của riêng bạn để có thể phục vụ những mục đích khác nhau"
                 icon={<FcBarChart style={{ fontSize: "7rem" }} />}
               />
               <ServiceCard
