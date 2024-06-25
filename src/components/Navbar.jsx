@@ -28,13 +28,8 @@ const Navbar = () => {
   console.log(open);
   return (
     <div className="font-bromega-regular">
-<<<<<<< HEAD
       <nav className="bg-white bg-opacity-60 backdrop-blur fixed px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 ">
         {/* dektop nav */}
-=======
-      <nav className="bg-navbarColor px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-300">
-        {/* Desktop nav */}
->>>>>>> 7a2e3c43cca490bb3535898f3a40c3d3b5a42758
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:px-4 pb-2 pt-2 text-black">
           <Link to="/" className="flex items-start">
             <img
@@ -193,10 +188,6 @@ const Navbar = () => {
               className="my-1 font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
               placeholder="Nhập mật khẩu của bạn"
             />
-<<<<<<< HEAD
-=======
-           
->>>>>>> 7a2e3c43cca490bb3535898f3a40c3d3b5a42758
 
             {/* Adjusted div for better responsiveness and layout */}
             <div className="font-bromega-regular flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-6">
