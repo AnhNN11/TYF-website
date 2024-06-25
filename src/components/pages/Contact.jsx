@@ -8,17 +8,17 @@ const Contact = () => {
   useEffect(() => {
     document.title = "TYF | Kết nối";
   }, []);
-  const { innerWidth: Width } = window;
+  // const { innerWidth: Width } = window;
   const ref = useRef();
   const isInView = useInView(ref);
   const mainControlls = useAnimation(isInView);
- 
+
   useEffect(() => {
     if (isInView) {
       mainControlls.start("visible");
     }
   }, [isInView]);
-  /* automatically scroll to the top of the page */
+  // /* automatically scroll to the top of the page */
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -280,7 +280,7 @@ const Contact = () => {
               Our Location
             </h2>
             <p className="text-lg text-gray-500">
-              Visit us at our office! We'd love to meet you in person. Here's
+              Visit us at our office! Wed love to meet you in person. Heres
               where you can find us:
             </p>
           </motion.div>

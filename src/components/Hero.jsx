@@ -33,8 +33,8 @@ const Hero = () => {
       <div className="relative pt-[120px] pb-[110px] lg:pt-[150px] z-1 md:flex md:shrink-0 ">
         <div className="container mx-auto max-sm:px-2 ">
           <div className="flex flex-wrap -mx-4 md:flex ">
-            <div className="w-full px-4 lg:w-6/12">
-              <div className="hero-content">
+            <div className="w-full px-4 lg:w-6/12 ">
+              <div className="hero-content ml-2">
                 <motion.div
                   variants={{
                     hidden: { opacity: 0, y: 75 },

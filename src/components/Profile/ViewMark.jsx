@@ -21,7 +21,11 @@ function ViewMark() {
 
   return (
     <>
-      <Button type="primary" onClick={handleButtonClick}>
+      <Button
+        type="primary"
+        onClick={handleButtonClick}
+        className="bg-blue-600"
+      >
         Chứng chỉ
       </Button>
 

@@ -37,9 +37,9 @@ function Profile() {
           type="primary"
           shape="round"
           icon={<UserAddOutlined />}
-          className="w-50"
+          className="w-50 bg-blue-600"
         >
-          Connect
+          Kết nối
         </Button>
         <ViewMark></ViewMark>
       </div>

@@ -25,10 +25,11 @@ const Navbar = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  console.log(open);
   return (
     <div className="font-bromega-regular">
-      <nav className="bg-custom-blue px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 border-b border-gray-300">
-        {/* Desktop nav */}
+      <nav className="bg-white bg-opacity-60 backdrop-blur fixed px-2 p-1 sm:h-auto sm:w-full w-screen z-20 left-0 right-0 top-0 ">
+        {/* dektop nav */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:px-4 pb-2 pt-2 text-black">
           <Link to="/" className="flex items-start">
             <img
@@ -101,45 +102,50 @@ const Navbar = () => {
         </div>
 
         {/* Mobile nav */}
-        {/* <div className={`${open ? null : "hidden"} h-[20rem]`}>
+        <div className={`${open ? null : "hidden"} h-[20rem]`}>
           <ul>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 pt-6 ${isActive("/")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 pt-6 ${
+                isActive("/")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-                }`}
+              }`}
             >
               <Link to="/">Home</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/about")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
+                isActive("/about")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-                }`}
+              }`}
             >
               <Link to="/about">About</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/services")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
+                isActive("/services")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-                }`}
+              }`}
             >
               <Link to="/services">Services</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/blogs")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
+                isActive("/blogs")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-                }`}
+              }`}
             >
               <Link to="/blogs">Blogs</Link>
             </li>
             <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${isActive("/contact")
+              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
+                isActive("/contact")
                   ? "text-blue-500 border-b-2 border-blue-500"
                   : "hover:border-b-2 hover:border-blue-500"
-                }`}
+              }`}
             >
               <Link to="/contact">Contact</Link>
             </li>
@@ -152,7 +158,7 @@ const Navbar = () => {
               Get Started
             </button>
           </div>
-        </div> */}
+        </div>
       </nav>
 
       <Modal
@@ -167,15 +173,20 @@ const Navbar = () => {
         <div className="flex ">
           <div className="p-6 md:p-20">
             <h2 className="font-bromega-bold mb-5 text-4xl font-bold">
-              Đăng kí
+              Đăng nhập
             </h2>
-            <p className="font-bromega-regular max-w-sm mb-12 font-sans font-light text-gray-600">
-              Đăng kí để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
+            <p className="font-bromega-regular max-w-sm mb-6 font-sans font-light text-gray-600">
+              Đăng nhập để có thể liên hệ và nhận sự hỗ trợ của chúng tôi
             </p>
             <input
               type="text"
-              className="font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+              className="mb-1 font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
               placeholder="Nhập email của bạn"
+            />
+            <input
+              type="password"
+              className="my-1 font-bromega-regular w-full p-6 h-2 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+              placeholder="Nhập mật khẩu của bạn"
             />
 
             {/* Adjusted div for better responsiveness and layout */}
