@@ -177,7 +177,7 @@ const Hero = () => {
                     src={heroImage}
                     alt="hero"
                     className="max-w-full h-auto object-cover rounded-lg "
-                    style={{ width: "100%", maxWidth: "600px" }}
+                    style={{ width: "100%", maxWidth: "500px" }}
                   />
                 </motion.div>
               </div>

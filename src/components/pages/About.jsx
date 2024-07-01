@@ -23,12 +23,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Phan Quốc Thái Bảo",
+    name: "Nguyễn Bùi Phương Anh",
     role: "Leader - Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980974/vqscv851llrtoif0bzwt.jpg",
+    "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=J_PgxujXtsEQ7kNvgFmggwX&_nc_ht=scontent.fsgn2-10.fna&oh=00_AYB8rIDMv_HBE4yzaOVdZacVteQFJyj4HMh5slJSNlfZMA&oe=6682C8BB",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -52,12 +52,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Lê Thế Bảo",
+    name: "Huỳnh Văn Tín",
     role: "Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-      "https://res.cloudinary.com/dehk1bcny/image/upload/v1718981037/wdjiogfni611daixilui.jpg",
+      "https://scontent.xx.fbcdn.net/v/t1.15752-9/448158920_493875789737453_5356450342645591299_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zmLkrUptpCYQ7kNvgF-Aaxx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFq21RLar4O7AmgKyno1dXmfH659QfAllIKKfuBIx46zw&oe=66A47EF2",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -66,12 +66,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Nguyễn Văn Hoàng Phúc",
+    name: "Nguyễn Anh Quân",
     role: "Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980911/pgyjjuluatmdw4tfdb6r.jpg",
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/448693138_1870031186805158_7274096340955810742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vAw0SkKTJ0oQ7kNvgGLk2wh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEN1ITm4CHddIIZmQHnffjjA5qw_A_f5JsUbgwDje5g5A&oe=66A46FD6",
     
     socialLinks: {
       twitter: "#",
@@ -81,12 +81,12 @@ const teamMembers = [
     },
   },
   {
-    name: "Đinh Bảo Hân",
+    name: "Phan Ngọc Dạ Quyên",
     role: "Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://res.cloudinary.com/dehk1bcny/image/upload/v1718980835/y0mugxhnyylzawnsjmis.jpg",
+    "https://scontent.xx.fbcdn.net/v/t1.15752-9/448523950_478772978158575_2788264966530679159_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=UcMb_b8GSEAQ7kNvgG1RiTD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHgozmYg0KSrJBOdtQ_lRZS-N-J0WHlXxp79-_DzKlPyQ&oe=66A4612D",
     socialLinks: {
       twitter: "#",
       facebook: "#",
