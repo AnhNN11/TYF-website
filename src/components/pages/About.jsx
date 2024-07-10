@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Nguyễn Bùi Phương Anh",
-    role: " - Dev",
+    role: "Marketing",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
@@ -67,7 +67,7 @@ const teamMembers = [
   },
   {
     name: "Nguyễn Anh Quân",
-    role: "Dev",
+    role: "Marketing",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
@@ -82,7 +82,7 @@ const teamMembers = [
   },
   {
     name: "Phan Ngọc Dạ Quyên",
-    role: "Dev",
+    role: "Marketing",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
