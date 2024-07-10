@@ -28,7 +28,7 @@ const teamMembers = [
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=J_PgxujXtsEQ7kNvgFmggwX&_nc_ht=scontent.fsgn2-10.fna&oh=00_AYB8rIDMv_HBE4yzaOVdZacVteQFJyj4HMh5slJSNlfZMA&oe=6682C8BB",
+    "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFm_G9_g9wM4NgnuljYuyDp0UOBuPUht6DRQ4G49SG3oDTF2aHJWeJcI2blP5vJbEwJsmssj91QFM0Nrd5ItlYQ&_nc_ohc=pn_fTjSo0BIQ7kNvgHqMYMg&_nc_ht=scontent.fsgn2-9.fna&oh=00_AYCZzALZXht0q2HZGx_Dn4f5I5QyA_meC3lVc6Kx5BmFkQ&oe=6694247B",
     socialLinks: {
       twitter: "#",
       facebook: "#",
