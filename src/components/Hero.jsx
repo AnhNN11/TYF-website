@@ -7,6 +7,7 @@ import graygrids from "./images/brands/graygrids.svg";
 import uideck from "./images/brands/uideck.svg";
 import backgroundImage from "./images/background.png"; // adjust the path as needed
 import { useAnimation, useInView } from "framer-motion";
+
 const Hero = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -162,7 +163,7 @@ const Hero = () => {
             </div>
 
             {
-              <div className="w-full lg:w-6/12 lg:text-right flex justify-center lg:justify-end mt-8 lg:mt-0 ">
+              <div className="w-full lg:w-6/12 lg:text-right flex justify-center lg:justify-end mt-8 lg:mt-0">
                 <motion.div
                   variants={{
                     visible: { opacity: 1, x: 0, filter: "blur(0px)" },
@@ -176,8 +177,8 @@ const Hero = () => {
                   <img
                     src={heroImage}
                     alt="hero"
-                    className="max-w-full h-auto object-cover rounded-lg "
-                    style={{ width: "100%", maxWidth: "500px" }}
+                    className="max-w-full h-auto object-cover rounded-lg"
+                    style={{ width: "100%", maxWidth: "400px", margin: "0 auto" }}
                   />
                 </motion.div>
               </div>

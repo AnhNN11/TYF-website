@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Nguyễn Bùi Phương Anh",
-    role: "Leader - Dev",
+    role: " - Dev",
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
