@@ -65,7 +65,7 @@ const Navbar = () => {
                     : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
                 }`}
               >
-                <Link to="/services">Sản phẩm & Giải pháp</Link>
+                <Link to="/services">Dịch Vụ</Link>
               </li>
               <li
                 className={`p-2 mr-2 font-bold cursor-pointer ${
@@ -84,6 +84,15 @@ const Navbar = () => {
                 }`}
               >
                 <Link to="/contact">Kết nối</Link>
+              </li>
+              <li
+                className={`p-2 font-bold cursor-pointer ${
+                  isActive("/booking")
+                    ? "text-customBlue border-b-2 border-customBlue"
+                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+                }`}
+              >
+                <Link to="/booking">Đặt Lịch</Link>
               </li>
             </ul>
           </div>

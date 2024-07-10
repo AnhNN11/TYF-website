@@ -11,6 +11,7 @@ import mapbg from "../images/map-bg.png";
 import Features from "../Features";
 import Footer from "../Footer";
 import { useAnimation, useInView, motion } from "framer-motion";
+
 const Services = () => {
   useEffect(() => {
     document.title = "TYF | Sản phẩm";
@@ -19,7 +20,6 @@ const Services = () => {
   const { innerWidth: width, innerHeight: height } = window;
   const ref = useRef(null);
   const isInView = useInView(ref);
-
   const mainControlls = useAnimation();
 
   useEffect(() => {
@@ -27,10 +27,12 @@ const Services = () => {
       mainControlls.start("visible");
     }
   }, [isInView]);
+
   /* automatically scroll to the top of the page */
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
       <Navbar />
@@ -57,67 +59,117 @@ const Services = () => {
                   </h2>
                   <p className="text-lg font-bromega-light text-gray-500">
                     Trong sự phát triển của lĩnh vực web, chúng tôi đưa ra đa dạng các giải pháp để đáp ứng những nhu cầu đặc biệt dành cho bạn
-
-
                   </p>
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: 75 },
-              }}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 1, delay: 0.25 }}
-              className="flex flex-wrap -mx-4 "
-            >
-              <ServiceCard
-                title="Tùy biến trang Web"
-                details="Tùy biến, xây dựng trang web của riêng bạn để có thể phục vụ những mục đích khác nhau"
-                icon={<FcBarChart style={{ fontSize: "7rem" }} />}
-              />
-              <ServiceCard
-                title="Responsive Web Design"
-                details="Designs that seamlessly adapt to any device, ensuring a consistent and engaging user experience."
-                icon={<FcSerialTasks style={{ fontSize: "7rem" }} />}
-              />
-              <ServiceCard
-                title="E-commerce Solutions"
-                details="Elevate your online sales with secure, feature-rich e-commerce platforms that simplify shopping for your customers."
-                icon={<FcMindMap style={{ fontSize: "7rem" }} />}
-              />
-            </motion.div>
-            <motion.div
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: -75 },
-              }}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 1, delay: 0.25 }}
-              className="flex flex-wrap -mx-4"
-            >
-              <ServiceCard
-                title="Content Management Systems (CMS)"
-                details="Take the reins of your content with our user-friendly CMS, making updates and content management a breeze."
-                icon={<FcBullish style={{ fontSize: "7rem" }} />}
-              />
-              <ServiceCard
-                title="SEO and Digital Marketing"
-                details="Increase your online presence and engage your audience through targeted SEO and effective digital marketing strategies."
-                icon={<FcOrgUnit style={{ fontSize: "7rem" }} />}
-              />
-              <ServiceCard
-                title="Web Maintenance and Support"
-                details="Reliable web maintenance and technical support to keep your website running smoothly and secure, so you can focus on your business."
-                icon={<FcFlowChart style={{ fontSize: "7rem" }} />}
-              />
-            </motion.div>
+
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full px-4">
+                <h1 className="text-4xl font-semibold mt-8 mb-4 text-center text-blue-700 pb-5">
+                  Dịch vụ gia sư
+                </h1>
+              </div>
+              <motion.div
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 75 },
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 1, delay: 0.25 }}
+                className="flex flex-wrap -mx-4"
+              >
+                <ServiceCard
+                  title="Dịch Vụ Gia Sư"
+                  details="Mục tiêu của dịch vụ là cung cấp những buổi học chất lượng cao, hiệu quả, giúp học sinh cải thiện kiến thức."
+                  icon={<FcBarChart style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="Dịch Vụ Trông Trẻ"
+                  details="Designs that seamlessly adapt to any device, ensuring a consistent and engaging user experience."
+                  icon={<FcSerialTasks style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="E-commerce Solutions"
+                  details="Elevate your online sales with secure, feature-rich e-commerce platforms that simplify shopping for your customers."
+                  icon={<FcMindMap style={{ fontSize: "7rem" }} />}
+                />
+              </motion.div>
+            </div>
+
+            <div className="flex flex-wrap -mx-4 mt-8">
+              <div className="w-full px-4">
+                <h1 className="text-4xl font-semibold mt-8 mb-4 text-center text-blue-700 pb-5">
+                  Dịch vụ trông trẻ
+                </h1>
+              </div>
+              <motion.div
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 75 },
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 1, delay: 0.25 }}
+                className="flex flex-wrap -mx-4"
+              >
+                <ServiceCard
+                  title="Content Management Systems (CMS)"
+                  details="Take the reins of your content with our user-friendly CMS, making updates and content management a breeze."
+                  icon={<FcBullish style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="SEO and Digital Marketing"
+                  details="Increase your online presence and engage your audience through targeted SEO and effective digital marketing strategies."
+                  icon={<FcOrgUnit style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="Web Maintenance and Support"
+                  details="Reliable web maintenance and technical support to keep your website running smoothly and secure, so you can focus on your business."
+                  icon={<FcFlowChart style={{ fontSize: "7rem" }} />}
+                />
+              </motion.div>
+            </div>
+            <div className="flex flex-wrap -mx-4 mt-8">
+              <div className="w-full px-4">
+                <h1 className="text-4xl font-semibold mt-8 mb-4 text-center text-blue-700 pb-5">
+                  Other Services
+                </h1>
+              </div>
+              <motion.div
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 75 },
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 1, delay: 0.25 }}
+                className="flex flex-wrap -mx-4"
+              >
+                <ServiceCard
+                  title="Content Management Systems (CMS)"
+                  details="Take the reins of your content with our user-friendly CMS, making updates and content management a breeze."
+                  icon={<FcBullish style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="SEO and Digital Marketing"
+                  details="Increase your online presence and engage your audience through targeted SEO and effective digital marketing strategies."
+                  icon={<FcOrgUnit style={{ fontSize: "7rem" }} />}
+                />
+                <ServiceCard
+                  title="Web Maintenance and Support"
+                  details="Reliable web maintenance and technical support to keep your website running smoothly and secure, so you can focus on your business."
+                  icon={<FcFlowChart style={{ fontSize: "7rem" }} />}
+                />
+              </motion.div>
+            </div>
           </div>
         </section>
+
+        {/* Features component */}
         <Features />
+
         <div className="xl:px-20 px-6 py-20 xl:mx-auto xl:container">
           <div className="mx-auto mb-12 text-center lg:mb-20">
             <span className="block mb-2 text-lg font-semibold text-gray-500"></span>
@@ -127,9 +179,11 @@ const Services = () => {
               Trên toàn thế giới
             </h2>
             <p className="text-lg text-gray-500">
-            Có nhiều biến thể của các đoạn văn Lorem Ipsum có sẵn nhưng phần lớn đã bị thay đổi dưới một hình thức nào đó,
+              Có nhiều biến thể của các đoạn văn Lorem Ipsum có sẵn nhưng phần lớn đã bị thay đổi dưới một hình thức nào đó,
             </p>
           </div>
+
+          {/* World map image section */}
           <div className="md:mt-14 mt-4 relative sm:flex items-center justify-center">
             <img
               src={map}
@@ -139,8 +193,10 @@ const Services = () => {
             <img
               src={mapbg}
               alt="mobile-image"
-              className="sm:hidden -mt-10 block w-full h-96  absolute z-0"
+              className="sm:hidden -mt-10 block w-full h-96 absolute z-0"
             />
+
+            {/* Statistics section */}
             <motion.div
               ref={ref}
               variants={{
@@ -150,13 +206,14 @@ const Services = () => {
               initial="hidden"
               animate={mainControlls}
               transition={{ duration: 1, delay: 0.25 }}
-              className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-0  mt-4 left-0 xl:ml-56 sm:ml-12 xl:-mt-40 sm:-mt-12"
+              className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-0 mt-4 left-0 xl:ml-56 sm:ml-12 xl:-mt-40 sm:-mt-12"
             >
               <p className="text-3xl font-semibold text-gray-800">2K+</p>
               <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">
                 Companies Helped
               </p>
             </motion.div>
+
             <motion.div
               ref={ref}
               variants={{
@@ -166,13 +223,14 @@ const Services = () => {
               initial="hidden"
               animate={mainControlls}
               transition={{ duration: 1, delay: 0.25 }}
-              className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-0 sm:mt-0 mt-4 xl:mt-80  xl:-ml-0 sm:-ml-12"
+              className="shadow-lg xl:p-6 p-4 sm:w-auto w-full bg-white sm:absolute relative z-0 sm:mt-0 mt-4 xl:mt-80 xl:-ml-0 sm:-ml-12"
             >
               <p className="text-3xl font-semibold text-gray-800">25%</p>
               <p className="text-base leading-4 xl:mt-4 mt-2 text-gray-600">
                 Average Performance Increase
               </p>
             </motion.div>
+
             <motion.div
               ref={ref}
               variants={{
@@ -196,22 +254,19 @@ const Services = () => {
     </>
   );
 };
+
 export default Services;
 
 const ServiceCard = ({ icon, title, details }) => {
   return (
-    <>
-      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md cursor-pointer hover:shadow-lg  hover:-translate-y-4 transition ease-in-out duration-300 md:px-7 xl:px-10">
-          <div
-            className={`mb-8 flex h-[80px] w-[80px] p-0 items-center justify-center`}
-          >
-            {icon}
-          </div>
-          <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
-          <p className="text-body-color max-words">{details}</p>
+    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+      <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md cursor-pointer hover:shadow-lg hover:-translate-y-4 transition ease-in-out duration-300 md:px-7 xl:px-10">
+        <div className="mb-8 flex h-[80px] w-[80px] p-0 items-center justify-center">
+          {icon}
         </div>
+        <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
+        <p className="text-body-color max-words">{details}</p>
       </div>
-    </>
+    </div>
   );
 };

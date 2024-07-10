@@ -8,6 +8,7 @@ import Contact from "./components/pages/Contact";
 import Blogs from "./components/pages/Blogs";
 import CandidatePage from "./components/pages/Candidate";
 import CandidateDetail from "./components/pages/CandidateDetail";
+import Booking from "./components/pages/Booking"
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/candidates" element={<CandidatePage />} />
         <Route path="/candidates/:candidateId" element={<CandidateDetail />} />
+        <Route path="/booking" element={<Booking />} />
       </Routes>
     </BrowserRouter>
   );
