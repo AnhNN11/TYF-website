@@ -28,3 +28,122 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
 }
+/* Định dạng mặc định cho h1, span và p */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  font-weight: lighter;
+  z-index: 20;
+}
+
+.responsive-heading,
+.company-name,
+.p-heading {
+  margin:0;
+
+}
+
+.responsive-heading {
+  font-size: 40px;
+}
+
+.company-name {
+  font-size: 60px;
+  color: #1e90ff; /* Custom blue color */
+  cursor: pointer;
+}
+
+.p-heading {
+  max-width: 500px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* Khi màn hình bé hơn 1024px (large devices) */
+@media (max-width: 1024px) {
+  .responsive-heading{
+    font-size: 40px;
+  }
+  .company-name {
+    font-size: 50px;
+  }
+  .p-heading {
+    font-size: 15px;
+  }
+}
+
+/* Khi màn hình bé hơn 768px (medium devices) */
+@media (max-width: 819px) {
+  .responsive-heading{
+    font-size: 27px;
+  }
+  .company-name {
+    font-size: 35px;
+  }
+  .p-heading {
+    font-size: 14px;
+  }
+  .text-container{
+    display: block;
+  }
+}
+
+/* Khi màn hình bé hơn px (small devices) */
+@media (max-width: 562px) {
+  .responsive-heading{
+    font-size: 20px;
+  }
+  .company-name {
+    font-size: 26px;
+  }
+  .p-heading {
+    font-size: 12px;
+  }
+}
+.button {
+  background-color: #1e90ff; /* Màu nền */
+  border: 2px solid #1e90ff; /* Viền */
+  color: #fff; /* Màu chữ */
+  padding: 12px 20px; /* Kích thước padding */
+  border-radius: 8px; /* Bo tròn góc */
+  text-decoration: none; /* Không gạch chân */
+  transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển đổi */
+  font-size: 16px; /* Kích thước chữ */
+}
+
+.button:hover {
+  background-color: #0078d4; /* Màu nền hover */
+  border-color: #0078d4; /* Viền hover */
+}
+
+/* Media queries cho các kích thước màn hình khác nhau */
+
+/* Khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 16px; /* Giảm padding */
+    font-size: 14px; /* Giảm kích thước chữ */
+  }
+}
+
+/* Khi màn hình nhỏ hơn 480px */
+@media (max-width: 546px) {
+  .button {
+    padding: 8px 12px; /* Giảm padding */
+    font-size: 12px; /* Giảm kích thước chữ */
+    
+  }
+}
+@media (max-width: 768px) {
+  .image-container {
+    text-align: center; /* Căn giữa hình ảnh khi màn hình nhỏ */
+    margin-top: 20px; /* Khoảng cách với phần nội dung văn bản */
+  }
+
+  .img {
+    max-width: 80%; /* Giảm kích thước của hình ảnh để phù hợp với màn hình nhỏ hơn */
+  }
+}
