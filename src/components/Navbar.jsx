@@ -88,6 +88,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile nav */}
+  
         <div className={`${open ? "" : "hidden"} h-[20rem]`}>
           <ul>
             {navLinks.map(({ path, label }) => (

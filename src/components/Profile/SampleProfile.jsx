@@ -15,19 +15,19 @@ const candidates = [
     name: "Lan Hương",
     points: 73,
     avatarURL:
-    "https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/371930151_2223735487817461_1331707486430222022_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFma_Efzs4tSIJsbjtTu5XGlFRR05KfIWOUVFHTkp8hY7OPj9tlpChDXZESjeSTGlXlqlv-vlUfr69H_OpH8OBp&_nc_ohc=CY4rbUzvO4IQ7kNvgHseQ5j&_nc_ht=scontent.fdad3-4.fna&oh=00_AYCtNuOcDuwLtWOyJWI9-BjHZeN31QJ9xnjHVuzJTTHlBA&oe=667B9630",
+    "https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/437941897_1081391949825747_2297369076400627761_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=68laCxB_BoQQ7kNvgGJwL_3&_nc_ht=scontent-hkg4-1.xx&oh=00_AYCpLyzkVe5kCtWX_pwvbFU2ffFycCbkK4H_vMSGwe80zA&oe=669EFA52",
   },
   {
     name: "Lê Bảo Anh",
     points: 81,
     avatarURL:
-    "https://instagram.fdad3-5.fna.fbcdn.net/v/t39.30808-6/440343097_18037677745892577_5178960344427018462_n.jpg?stp=dst-jpg_e35_p720x720&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE3OTUuc2RyLmYzMDgwOCJ9&_nc_ht=instagram.fdad3-5.fna.fbcdn.net&_nc_cat=109&_nc_ohc=Sx4-hJDPd1UQ7kNvgEj3VkM&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzM1NDU2NTQ5MjYwMTQ5OTIyNA%3D%3D.2-ccb7-5&oh=00_AYCBtuUJHj8oIURP5XvDlpcAAo0OCgyxsuflQvjIXBacQg&oe=667B7C49&_nc_sid=cf751b",
+    "https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/422894464_4408035806088068_5182694526900589172_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JU-rZrQIti4Q7kNvgEQfWIJ&_nc_ht=scontent-hkg1-2.xx&oh=00_AYBCnEAU-3zqcvkzZYWnlQ-kMrMQIqcfSsIikdPwj2kexQ&oe=669EFAE0",
   },
   {
     name: "Trần Bảo Trân",
     points: 93,
     avatarURL:
-    "https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/351780589_818952549654257_4503747128713539792_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE02QaFTEPP2HvgkPRyytzlBVbNQdeBV8UFVs1B14FXxYKQzWBi9MJBkFzkvXjTU1A7eLY3LBv7szD0nrljKKgG&_nc_ohc=AHb6TExpvmQQ7kNvgEQJOrr&_nc_ht=scontent.fdad2-1.fna&oh=00_AYAbjoFIwYZbd6aStOBzxAn53Sv_h4c0I9rxU0sd6_dJsg&oe=667B7EF2",
+    "https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/450224659_841457571244655_2570864231675852316_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wDoec_07R88Q7kNvgFnVr-N&_nc_ht=scontent-hkg1-2.xx&oh=00_AYD1ru2-W-If3G3tHWHGPsfIqygWvd0Kwr8y5Cez_ziuiQ&oe=669EF6D5",
   },
   {
     name: "Phương Anh",

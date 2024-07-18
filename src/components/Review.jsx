@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { MdVerified } from "react-icons/md";
 import { useAnimation, useInView, motion } from "framer-motion";
-import A from "./images/A.png";
+
+import A from "./images/avatar.avif";
 const Review = () => {
   const { innerWidth: Width } = window;
   const ref = useRef();
