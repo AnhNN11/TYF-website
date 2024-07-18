@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="cta-text">
                       <h4 className="font-bromega-regular"> Find us</h4>
                       <span className="font-bromega-light">
-                        Tầng 1 Tòa nhà 06 Trần Phú, Q. Hải Châu, TP. Đà Nẵng
+                        Đại Học FPT Đà Nẵng 
                       </span>
                     </div>
                   </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="cta-text">
                       <h4 className="font-bromega-regular">Mail us</h4>
                       <span className="font-bromega-light">
-                        nguyenanh.mindxdn@gmail.com
+                        TYFcompany@gmail.com
                       </span>
                     </div>
                   </div>
@@ -64,9 +64,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-text">
                       <p className="font-bromega-light">
-                        Lorem ipsum dolor sit amet, consec tetur adipisicing
-                        elit, sed do eiusmod tempor incididuntut consec tetur
-                        adipisicing elit,Lorem ipsum dolor sit amet.
+                       
                       </p>
                     </div>
                   </div>

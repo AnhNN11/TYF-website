@@ -13,7 +13,7 @@ const Hero = () => {
         alt="background"
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-30 filter"
       />
-      <Row className="relative z-10 pb-20 mt-5">
+      <Row className="relative z-10 pb-20 mt-20">
         <Col xs={24} sm={12}>
           <div className="text-container">
             <h1 className="responsive-heading">Chào mừng đến</h1>
@@ -39,7 +39,7 @@ const Hero = () => {
               src={heroImage}
               alt="hero"
               className="max-w-full h-auto object-cover rounded-lg pt-20 img"
-              style={{ width: "100%", maxWidth: "400px", margin: "0 auto" }}
+              style={{ width: "100%", maxWidth: "300px", margin: "0 auto" }}
             />
           </div>
         </Col>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Icon from "./images/Logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -11,7 +11,33 @@ const Navbar = () => {
   const location = useLocation(); // Lấy đường dẫn hiện tại
 
   const isActive = (path) => location.pathname === path;
+  const generateLinkClassName = (path) =>
+    `p-2 mr-2 font-bold cursor-pointer ${
+      isActive(path)
+        ? "text-customBlue border-b-2 border-customBlue"
+        : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
+    }`;
 
+  const links = [
+    { path: "/", label: "Trang chủ" },
+    { path: "/about", label: "Về chúng tôi" },
+    { path: "/services", label: "Dịch Vụ" },
+    { path: "/blogs", label: "Tuyển dụng" },
+    { path: "/contact", label: "Kết nối" },
+    { path: "/booking", label: "Đặt Lịch" },
+  ];
+  const commonLiClass =
+    "text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4";
+  const activeClass = "border-b-2 border-blue-500";
+  const hoverClass = "hover:border-b-2 hover:border-blue-500";
+  const navLinks = [
+    { path: "/", label: "Trang chủ" },
+    { path: "/about", label: "Về chúng tôi" },
+    { path: "/services", label: "Dịch vụ" },
+    { path: "/blogs", label: "Tuyển dụng" },
+    { path: "/contact", label: "Kết nối" },
+    { path: "/booking", label: "Đặt Lịch" },
+  ];
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -40,60 +66,11 @@ const Navbar = () => {
           </Link>
           <div className="flex">
             <ul className="sm:flex justify-center hidden">
-              <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/">Trang chủ</Link>
-              </li>
-              <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/about")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/about">Về chúng tôi</Link>
-              </li>
-              <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/services")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/services">Dịch Vụ</Link>
-              </li>
-              <li
-                className={`p-2 mr-2 font-bold cursor-pointer ${
-                  isActive("/blogs")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/blogs">Bài viết</Link>
-              </li>
-              <li
-                className={`p-2 font-bold cursor-pointer ${
-                  isActive("/contact")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/contact">Kết nối</Link>
-              </li>
-              <li
-                className={`p-2 font-bold cursor-pointer ${
-                  isActive("/booking")
-                    ? "text-customBlue border-b-2 border-customBlue"
-                    : "hover:text-customBlue hover:border-b-2 hover:border-customBlue"
-                }`}
-              >
-                <Link to="/booking">Đặt Lịch</Link>
-              </li>
+              {links.map(({ path, label }) => (
+                <li key={path} className={generateLinkClassName(path)}>
+                  <Link to={path}>{label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex">
@@ -111,60 +88,25 @@ const Navbar = () => {
         </div>
 
         {/* Mobile nav */}
-        <div className={`${open ? null : "hidden"} h-[20rem]`}>
+        <div className={`${open ? "" : "hidden"} h-[20rem]`}>
           <ul>
-            <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 pt-6 ${
-                isActive("/")
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:border-b-2 hover:border-blue-500"
-              }`}
-            >
-              <Link to="/">Home</Link>
-            </li>
-            <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/about")
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:border-b-2 hover:border-blue-500"
-              }`}
-            >
-              <Link to="/about">About</Link>
-            </li>
-            <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/services")
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:border-b-2 hover:border-blue-500"
-              }`}
-            >
-              <Link to="/services">Services</Link>
-            </li>
-            <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/blogs")
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:border-b-2 hover:border-blue-500"
-              }`}
-            >
-              <Link to="/blogs">Blogs</Link>
-            </li>
-            <li
-              className={`text-blue-500 hover:text-blue-800 font-bold pl-8 cursor-pointer pb-4 ${
-                isActive("/contact")
-                  ? "text-blue-500 border-b-2 border-blue-500"
-                  : "hover:border-b-2 hover:border-blue-500"
-              }`}
-            >
-              <Link to="/contact">Contact</Link>
-            </li>
+            {navLinks.map(({ path, label }) => (
+              <li
+                key={path}
+                className={`${commonLiClass} ${
+                  isActive(path) ? activeClass : hoverClass
+                } ${path === "/" ? "pt-6" : ""}`}
+              >
+                <Link to={path}>{label}</Link>
+              </li>
+            ))}
           </ul>
           <div className="flex pl-8">
             <button
               type="button"
               className="bg-blue-600 px-4 py-2 text-white rounded-md mr-2 hover:bg-blue-500"
             >
-              Get Started
+              Bắt đầu
             </button>
           </div>
         </div>

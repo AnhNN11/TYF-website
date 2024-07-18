@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .company-name {
-  font-size: 60px;
+  font-size: 80px;
   color: #1e90ff; /* Custom blue color */
   cursor: pointer;
 }
@@ -92,16 +92,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Khi màn hình bé hơn px (small devices) */
-@media (max-width: 562px) {
+@media (max-width: 569px) {
   .responsive-heading{
-    font-size: 20px;
+    font-size: 30px;
   }
   .company-name {
-    font-size: 26px;
+    font-size: 55px;
   }
   .p-heading {
-    font-size: 12px;
+    font-size: 13px;
+    padding-right: 100px;
   }
+
 }
 .button {
   background-color: #1e90ff; /* Màu nền */

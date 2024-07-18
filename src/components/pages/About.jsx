@@ -1,18 +1,17 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { useAnimation, useInView, motion } from "framer-motion";
-import ayroui from "../images/brands/ayroui.svg";
-import graygrids from "../images/brands/graygrids.svg";
-import uideck from "../images/brands/uideck.svg";
+
 import SabMedia from "../images/Logo.png";
+import Accordion from "../QA";
 
 const teamMembers = [
   {
     name: "Nguyễn Đoàn Salem",
     role: "Designer",
-    description:
-      "Một người anh",
+    description: "Một người anh",
     image:
       "https://scontent.fdad3-1.fna.fbcdn.net/v/t1.15752-9/395637905_278201087929918_8420190409177866048_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFbb6QOLYGyC2XaBK7jxppXapdGM7GFZmtql0YzsYVma9bLhXJdgRFwG5wGIsLuqf4r00fl3jcw-MfpOKpqIyZc&_nc_ohc=c6tXW75A7joQ7kNvgEX6iNh&_nc_ht=scontent.fdad3-1.fna&oh=03_Q7cD1QFSQ5vFaxbzlCQf2Ax_qTIoELo_t11qoRw3yKzDsii23Q&oe=66993E5A",
     socialLinks: {
@@ -28,7 +27,7 @@ const teamMembers = [
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFm_G9_g9wM4NgnuljYuyDp0UOBuPUht6DRQ4G49SG3oDTF2aHJWeJcI2blP5vJbEwJsmssj91QFM0Nrd5ItlYQ&_nc_ohc=pn_fTjSo0BIQ7kNvgHqMYMg&_nc_ht=scontent.fsgn2-9.fna&oh=00_AYCZzALZXht0q2HZGx_Dn4f5I5QyA_meC3lVc6Kx5BmFkQ&oe=6694247B",
+      "https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/312605109_3034295970204612_925064984914075921_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XNg6ZC-l9Z8Q7kNvgEWAIJk&_nc_ht=scontent-hkg1-2.xx&oh=00_AYA1UP5No6TUVVPaVfV7k0qN8COQ29aao9ml4hrMdsNVfQ&oe=669EE8BB",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -71,8 +70,8 @@ const teamMembers = [
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://scontent.xx.fbcdn.net/v/t1.15752-9/448693138_1870031186805158_7274096340955810742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vAw0SkKTJ0oQ7kNvgGLk2wh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEN1ITm4CHddIIZmQHnffjjA5qw_A_f5JsUbgwDje5g5A&oe=66A46FD6",
-    
+      "https://scontent.xx.fbcdn.net/v/t1.15752-9/448693138_1870031186805158_7274096340955810742_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=vAw0SkKTJ0oQ7kNvgGLk2wh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEN1ITm4CHddIIZmQHnffjjA5qw_A_f5JsUbgwDje5g5A&oe=66A46FD6",
+
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -86,7 +85,7 @@ const teamMembers = [
     description:
       "Jese drives the technical strategy of the flowbite platform and brand.",
     image:
-    "https://scontent.xx.fbcdn.net/v/t1.15752-9/448523950_478772978158575_2788264966530679159_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=UcMb_b8GSEAQ7kNvgG1RiTD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHgozmYg0KSrJBOdtQ_lRZS-N-J0WHlXxp79-_DzKlPyQ&oe=66A4612D",
+      "https://scontent-hkg4-1.xx.fbcdn.net/v/t39.30808-6/450060047_841298701260542_825959227824184850_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=2E33_0vCz1oQ7kNvgG4Eior&_nc_ht=scontent-hkg4-1.xx&oh=00_AYDJmqFOE2stlIjnDngqAmHNm9GyxCJi7hqGfwTBTVGLig&oe=669EE726",
     socialLinks: {
       twitter: "#",
       facebook: "#",
@@ -201,35 +200,57 @@ const About = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-7/12 ">
               <motion.div
-                className="mt-0 lg:mt-0"
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: -120 },
+                }}
                 initial="hidden"
                 animate="visible"
                 transition={{ duration: 0.75, delay: 0.25 }}
               >
-                <div className="w-[20%] h-[3px] bg-gradient-to-r from-customBlue to-blue-200"></div>
-                {sections.map((section, index) => (
-                  <div key={index}>
-                    <h2
-                      className="cursor-pointer block text-xl font-semibold text-primary mb-3 relative"
-                      onClick={() => toggleSection(index)}
-                    >
-                      {section.title}
-                      {/* Underline div */}
-                      <div className="h-[2px] bg-gray-300 mt-2"></div>
-                    </h2>
-                    {isOpen === index && (
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5 }}
-                      >
-                        <ul>
-                          <li>{section.content}</li>
-                        </ul>
-                      </motion.div>
-                    )}
-                  </div>
-                ))}
+                <div className="p-4 bg-white rounded-lg">
+                  <Accordion
+                    title="Tại sao nên chọn TYF?"
+                    answer="TyF sở hữu đội ngũ gia sư và người trông trẻ được tuyển chọn kỹ lưỡng, có trình độ chuyên môn cao, giàu kinh nghiệm giảng dạy và chăm sóc trẻ em.
+Mỗi gia sư và người trông trẻ đều phải trải qua quá trình sàng lọc gắt gao về trình độ chuyên môn, kỹ năng sư phạm, đạo đức nghề nghiệp và khả năng giao tiếp.
+Chúng tôi cam kết mang đến cho bạn đội ngũ gia sư và người trông trẻ tận tâm, nhiệt tình, luôn đặt lợi ích của học sinh và trẻ em lên hàng đầu."
+                  />
+                  <Accordion
+                    title="TyF cung cấp những dịch vụ gì"
+                    answer="Dịch vụ gia sư cho học sinh ở mọi lứa tuổi, mọi môn học
+Dịch vụ trông trẻ trọn gói, bao gồm: cho trẻ ăn uống, tắm rửa, vệ sinh cá nhân, chơi đùa, học tập, v.v.
+Tư vấn giáo dục và định hướng nghề nghiệp cho học sinh"
+                  />
+                  <Accordion
+                    title="Làm thế nào để đảm bảo chất lượng dịch vụ của TyF?"
+                    answer="TyF có quy trình tuyển chọn gia sư và người trông trẻ rất gắt gao, đảm bảo rằng tất cả các nhân viên của chúng tôi đều có trình độ chuyên môn cao, kỹ năng sư phạm tốt và đạo đức nghề nghiệp nghiệp."
+                  />
+                  <Accordion
+                    title="TyF có cam kết gì về chất lượng dịch vụ?"
+                    answer="Học sinh được học tập với gia sư phù hợp nhất
+Trẻ em được chăm sóc chu đáo và an toàn
+Khách hàng luôn hài lòng với chất lượng dịch vụ"
+                  />
+                  <Accordion
+                    title="Học phí gia sư tại TyF như thế nào?"
+                    answer="Học phí gia sư tại TyF phụ thuộc vào nhiều yếu tố, bao gồm: trình độ học tập của học sinh, môn học cần gia sư, số giờ học mỗi tuần và trình độ của gia sư."
+                  />
+                  <Accordion
+                    title="TyF có những hình thức trông trẻ nào?"
+                    answer="Trông trẻ theo giờ
+Trông trẻ ban ngày
+Trông trẻ ban đêm
+Trông trẻ cả ngày"
+                  />
+                  <Accordion
+                    title="TyF có chương trình ưu đãi nào cho khách hàng sử dụng dịch vụ trông trẻ không?"
+                    answer="Có, TyF thường xuyên có các chương trình ưu đãi dành cho khách hàng sử dụng dịch vụ trông trẻ"
+                  />
+                  <Accordion
+                    title="TyF có thường xuyên tổ chức các khóa đào tạo cho gia sư và người trông trẻ không?"
+                    answer="Có, TyF thường xuyên tổ chức các khóa đào tạo cho gia sư và người trông trẻ nhằm nâng cao chất lượng dịch vụ"
+                  />
+                </div>
               </motion.div>
             </div>
           </div>
@@ -268,12 +289,9 @@ const About = () => {
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-black-500 ">
                     <a href="#">{member.name} </a>
-                    
                   </h3>
-                  <span className="text-black-500 ">
-                    {member.role}
-                  </span>
-                  
+                  <span className="text-black-500 ">{member.role}</span>
+
                   <div className="flex mt-4">
                     <a
                       href={member.socialLinks.twitter}

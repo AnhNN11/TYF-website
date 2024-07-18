@@ -61,7 +61,7 @@ function Skills() {
               <h1 className="text-xl font-bold mb-2">
                 Mức độ phù hợp của bạn với công việc:
               </h1>
-
+<RadarChart/>
            
             </div>
           </div>
